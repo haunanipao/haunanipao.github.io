@@ -1,0 +1,47 @@
+/* HTMl elements */
+html {font-size: 22pt;}
+body {
+  background-color: #000; 
+  color:whitesmoke;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1em; 
+}
+p {padding: 20px;}
+a {color:pink;}
+a:visited {color:palegoldenrod;}
+a:hover, a:active {color:aqua;}
+table, tr, th, td, caption {
+  border: 1px solid pink;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+
+/* Media  Query */
+@media (max-width: 100px) {}
+@media (max-width: 350px) {
+  
+}
+
+/* IDs */
+
+/* Classes */
+.list {
+  list-style-type: disc;
+  text-align: left;
+  font-size: 1em;
+}
+.underline {text-decoration: underline;}
+.border {border-radius:10px} /* 50% */
+
+/* Variable */
+--colour: grey;
+
+
+/* playing around with the grid */
+.s1 {background-color:lightcoral;}
+.s2 {background-color: lightsalmon;}
+.s3 {background-color: lightgoldenrodyellow;}
+.s4 {background-color: lightgreen;}
+.s5 {background-color: lightskyblue;}
+.s6 {background-color: lightpink;}
