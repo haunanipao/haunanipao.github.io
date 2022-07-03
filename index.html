@@ -3,122 +3,105 @@
   <head>
     <meta charset="UTF-8">
     <meta name="author" content="Haunani Pao">
-    <meta name="description" content="This page contains all the things I'm learning in DEVA/Foundations/Sprint 2.">
+    <meta name="description" content="About my DEVA journey">
     <link rel="icon" href="favicon.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link href="/styles/main.css" rel="stylesheet" type="text/css">
+   
 
     <title>Hi from Haunani Pao</title>
   </head>
       <!-- this is a comment. -->
-  <body>
+  <body class="flex-container gradient-pattern">
     <header>
-      <h1>Hi World!</h1>
+      <h1>Haunani Pao</h1>
+      <figure>
+        <img class="image" src="haunanipao.png" alt="Haunani Pao" title="I am a NFT!" width="200" height="200" loading="lazy"/>  
+      </figure>
+      
       <nav aria-label="primary-navigation">
-        <img src="haunanipao.png" alt="Haunani Pao" title="I am a NFT!" width="300" height="300" loading="lazy"/>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Thoughts</a></li>
-          <li><a href="#contact">Contact Me</a></li>
+        <ul class="navigation">
+          <li><a href="https://www.linkedin.com/in/haunani/"><img src="img/icon-linkedin.png" alt="linkedin" title="View my linkedin" width="50" height="50"/></a></li>
+          <li><a href="https://github.com/haunanipao"><img src="img/icon-github.png" alt="github" title="View my github" width="50" height="50"/></a></li>
+          <li><a href="https://discord.gg/MTKXnZNZJt"><img src="img/icon-discord.png" alt="discord" title="Join my discord" width="50" height="50"/></a></li>
+          <li><a href="https://calendly.com/uxauckland/meet-with-haunani"><img src="img/icon-calendly.png" alt="calendly" title="Schedule a chat with me" width="50" height="50"/></a></li>
+       
         </ul>
       </nav>
     </header>
     <main>
-      <article id="thoughts">
-        <h2>My Thoughts in DEVA Manaia 22</h2>
-        <p>
-          27 June 2022 / <a href="blog/blog.html"> Have You Read Any Good Blogs Lately? </a>
-        </p>
-        <section> <!-- section -->
-          <h3>Stuff</h3>
+      <section>
+
+      </section>
+      <section>
+        <h2>Hello!</h2>
           <p>
-            Evidently, I'm just getting <em>stuff</em> done.
+            I am a maker, a mentor, a curious collaborator who loves to work with people and make products that hit the sweet spot between innovation and peoples needs.
           </p>
-        </section>
-        <section>
-          <h3>And Nonsense</h3>
+         
+      </section>
+
+      <section>
+      <aside>
+        <details>        
+          <summary>Is Figma Auto Layout the gate way drug to CSS Flexbox?</summary> <br>
           <p>
-            Creating an assessible table.
-          </p>
-          <aside>
-            <details>
-              <summary>Guess the <mark>number of hours</mark> I code per day?</summary>
-              <p>I start at <time datetime="10:00">10 am</time> and type code for <time datetime="PT3H"> 3 hours every morning.</time></p>
-            </details>
-          </aside>
-          <table>
-            <caption>My Daily Schedule</caption>
-            <thead>
-              <tr>
-                <th>&nbsp;</th>
-                <th scope="col">Time</th>
-                <th scope="col">Activity</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Morning</th>
-                <td>
-                  <time datetime="10:00">10 am</time> - <time datetime="13:00">1 pm</time>
-                </td>
-                <td>Study and code</td>
-              </tr>
-              <tr>
-                <th scope="row">Break</th>
-                <td>
-                  <time datetime="13:00">1 pm</time> - <time datetime="14:00">2 pm</time>
-                </td>
-                <td>Lunch</td>
-              </tr>
-              <tr>
-                <th scope="row">Afternoon</th>
-                <td>
-                  <time datetime="14:00">2 pm</time> - <time datetime="18:00">6 pm</time>
-                </td>
-                <td>Study and code</td>
-              </tr>
-              <tr>
-                <th scope="row">Evening</th>
-                  <td rowspan="2">All Other Times</td>
-                  <td>Free Time</td>
-              </tr>
-              <tr>
-                <th scope="row">Night</th>
-                  <td>Sleep</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="3">That's what I aim to study web development.</td>
-              </tr>
-            </tfoot>
-          </table>
-        </section>
-      </article>
-      <hr>
-      <section id="contact">
-        <!--h2>Contact Me</h2>
-        <p>Got something to share, please contact me!</p-->
-        <form action="https://httpbin.org/get" method="get">
-          <fieldset>
-            <legend>Got something to share? Send Me a Note</legend>
-          <p>
-            <label for="preferedName">What's your name?</label>
-            <input type="text" name="preferedName" id="preferedName" placeholder="Haunani Pao" autocomplete="on" required>
-          </p>
-            <label for="message">Your Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave your message here."></textarea>
-       
-          <button type="reset">Reset</button>
-          <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
-          <button type="submit">Send</button>
-        </fieldset>
-        </form>
+            I really enjoyed playing with the Flexbox. It reminded me of Figma Design tool which is a tool I use to design a webpage using the <strong>Auto Layout</strong> feature.  It felt familar to:
+            <ul>
+              <li>⚪ set areas on the page for header, main and footer.</li>
+              <li>⚪ add content items for each area,</li>
+              <li>⚪ use features of auto layout to decide how the items would flow on a page.</li>
+              <li></li>
+            </ul>      
+                   
+            <h3>Setting Direction</h3>
+              <img src="/img/figma-auto-layout-flex-gap.png" alt="Figma's Auto Layout">
+              <p>With Figma Auto Layout, I can set the direction of the items horizontally or vertically, just like flex-direction can be rows or column.  But Figma Auto Layout does not do the row-reverse or column reverse.</p>
+              <p> I can set the gap between items as well as padding horizontally and vertically. In Flexbox I've only managed to set gaps between items so far.</p>
+
+            <h3>Alignment of items</h3>
+            <p>I find aligning items rather fundamental for layouts.</p>
+               <img src="/img/figma-auto-layout-flex-justify-content.png" alt="Jusify Content">
+               <p>With Figma Auto Layout, I can set the items alignment in 9 different ways.  With Flexbox, I use justify-content and align-items to specify how I want to put items in the space.  I do appreciate how easy it is to specify in Flexbox.</p>
+
+            <h3>Advance Layout for spacing items</h3>
+              <img src="/img/figma-auto-layout-advanced-layout.png" alt="Packed">
+              <img src="/img/figma-auto-layout-advanced-layout-space-between.png" alt="Space Between">
+              <p>In Flexbox, there's quite a few options for setting item space.  You can use space-between, which give equal space between items on the page.  I found in Figma's Auto Layout, the options to set space between items or keep them packed closely.  Flexbox allows items to have space-around items, which I'm not sure I found something equal in Figma.</p>
+              <p> I'll pick this up later as I have more time with Flexbox and making web pages.</p>
+              
+
+                    
+          
+        </details>
+      </aside>
+      </section>
+      
+      <section>    
+        <aside>
+          <details>        
+            <summary>I meet alot of immigrants in the Auckland tech scene.  Here are 3 things I tell folks about the design community.</summary> <br>
+              <strong>Kindness First!</strong>
+                <p>We call Aotearoa our home.  We’re Just Another Fabulous Accent. We think diverse points of view make for better outcomes.  We challenge our bias through warm and friendly conversations.   We value inclusivity, kindness and respect.</p>
+                <br>
+                <strong>Be generous with your mana.</strong>
+                <p>We think everyone is smart and capable.  When two or more of us get together, we co-create and share learnings so "no one grows alone".</p> 
+                <br>
+                <strong>Go HAM!</strong>
+                <p>We find the sparks of inspiration, explore and learn from mistakes. 
+                Go Hard Always Mate!</p> 
+            
+          </details>
+        </aside>
       </section>
     </main>
     <footer>
-      <p>&copy; 2022 / <a href="about.html">Haunani Pao</a></p>
-      <p><a href="/">Back to Top</a></p>
+      <h3> &copy; 2022 / Haunani Pao</h3>
+
     </footer>
   </body>
 </html>
