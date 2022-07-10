@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Haunani Pao">
+    <meta name="description" content="Exploring Grid layout with CSS.">
+    <meta name="viewport" content="width=200, initial-scale=1">
+    <link rel="icon" href="favicon.jpg" type="image/x-icon">
+   
+    <style>
+        /* playing around with the grid */
+
+        body {background-color: black;}
+        header {background-color: antiquewhite;}
+        main {
+          font-size: 40px; 
+          min-height: 300px;
+          width: 100%; 
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 50px auto 1fr auto;
+          grid-gap: 10px;
+          grid-template-areas: 
+          "header"
+          "advert"
+          "content"
+          "footer";
+        }
+        @media (min-width: 300px) {
+            main {
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas: 
+            "advert header"
+            "advert content"
+            "advert footer";
+          }
+        }
+        @media (min-width: 400px) {
+            main {
+            grid-template-areas: 
+            "header header"
+            "advert content"
+            "footer footer";
+          }
+        }
+        .container {
+          font-size: 40px; 
+          min-height: 300px;
+          width: 100%; 
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 50px auto 1fr auto;
+          grid-gap: 10px;
+          grid-template-areas: 
+          "header"
+          "advert"
+          "content"
+          "footer";
+        }
+        @media (min-width: 300px) {
+            .container {
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas: 
+            "advert header"
+            "advert content"
+            "advert footer";
+          }
+        }
+        @media (min-width: 400px) {
+            .container {
+            grid-template-areas: 
+            "header header"
+            "advert content"
+            "footer footer";
+          }
+        }
+        .s1 {background-color: lightcoral; grid-area: header;}
+        .s2 {background-color: lightsalmon; grid-area: advert;}
+        .s3 {background-color: lightgoldenrodyellow; grid-area: content;}
+        .s4 {background-color: lightgreen; grid-area: footer;}
+        .s5 {background-color: lightskyblue;}
+        .s6 {background-color: lightpink;}
+    </style>
+    <title>Grid</title>
+  </head>
+      <!-- this is a comment. -->
+  <body>
+    <header>
+     
+    </header>
+    
+    <main>
+      <section class="s1">
+        <p>1 main</p>
+      </section>
+      <section class="s2">
+        <p>2 main</p>
+      </section>
+      <section class="s3">
+        <p>3 main</p>
+      </section>
+      <section class="s4">
+        <p>4 main</p>
+      </section>
+      <section class="s5">
+        <p>5 main</p>
+      </section>
+      <section class="s6">
+        <p>6 main</p>
+      </section>
+    </main>
+    
+    <div class="container">
+      <section class="s1">
+        <p>1 header</p>
+      </section>
+      <section class="s2">
+        <p>2 advert</p>
+      </section>
+      <section class="s3">
+        <p>3 content</p>
+      </section>
+      <section class="s4">
+        <p>4 footer</p>
+      </section>
+      <section class="s5">
+        <p>5 div container</p>
+      </section>
+      <section class="s6">
+        <p>6 div container</p>
+      </section>
+      
+    </div>
+    <footer>
+
+    </footer>
+  </body>
+</html>
+
+<style>
+  

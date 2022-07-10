@@ -1,0 +1,273 @@
+:root {
+  --color-primary:LightSkyBlue;
+  --color-secondary:pink;
+  --color-background: white 70%;
+  --color-text:whitesmoke;
+  --border-radius:0.5rem;
+  --padding-desktop:50px;
+  --padding-tablet:15px;
+  --padding-mobile:10px;
+  --margin-default:20px;
+/* playing around with media queries */
+  --c1:lightcoral;
+  --c2:lightsalmon;
+  --c3:lightgoldenrodyellow;
+  --c4:lightgreen;
+  --c5:lightskyblue;
+  --c6:lightpink;
+}
+
+* {margin:0px; padding:0px;}
+html {display: flex; justify-content:center; align-items: center;}
+
+body {
+  
+  width: 80%;
+  font-family:'Montserrat Alternates', sans-serif; font-size: 1.5rem;
+  color:var(--color-text);
+  padding: 20px;
+  margin: 20px;
+  display:flex;
+  flex-direction: column;       
+   
+}
+
+p {text-align: left; padding: 20px;}
+a {color:lightskyblue;} 
+a:visited {color:lightcoral}
+a:hover, a:active {color:aqua;}
+h4 {margin-left: 20px;}
+
+header { 
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between; align-items:center;      
+}
+
+img[class] { 
+
+  display: flex; justify-content: center; align-items: center;
+}
+
+main {
+  height: 100%;
+  font-size: 1em;
+  border: var(--c6);
+
+  display:flex;
+  
+  flex-flow: row wrap;
+}
+
+nav li {
+  
+  display:flex;
+  flex-direction: column;
+  justify-content:center; align-items: center;
+        
+}
+section {
+ font-size: 1em;
+ margin: var(--margin-default);
+}
+
+
+footer {
+  height: 200px;
+  width:100%;
+  font-size: 1em;
+  display:flex;
+  justify-content:center; align-items: center;
+  
+}
+
+details {
+ 
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+aside p {font-size: smaller;}
+aside details ul{
+  list-style-type: circle;
+}
+aside li {
+  display:block;
+  margin: 20px;
+}
+aside h3 {
+  margin:var(--margin-default);
+  color: var(--c2);
+
+}
+
+aside summary {
+  color: var(--c1);
+  font-size: larger;
+  font-weight: bold;
+  
+}
+
+.intro {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; align-items: flex-start;
+  width: 80%;
+  
+}
+
+.flex1 {
+  display: flex;
+  flex-flow: column nowrap;
+   
+}
+
+.container {
+	background-color: rgba(255, 255, 255, 0.65);
+	border: 3px solid black;
+	border-radius: 3px;
+	width: 60%;
+	height: auto;
+	padding: 0px 50px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	backdrop-filter: blur(11.7px);
+	-webkit-backdrop-filter: blur(11.7px);
+}
+
+.date { font-size: 16px; color: var(--c5);}
+
+/*gradient background*/
+.gradient-pattern {
+  animation: gradient 15s ease infinite;
+  background-image: linear-gradient(135deg, #A82F4C, #6C195C, #50299D, #001892);
+  background-size: 400% 400%;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes gradient {
+  0% {background-position: 51% 0%;}
+  50% {background-position: 50% 100%;}
+  100% {background-position: 51% 0%;}
+}
+/*end gradient background*/
+
+.flex-container {
+  display:flex;
+  flex-flow:column wrap;
+  justify-content: space-around;     
+  gap: 50px;
+}
+
+.navigation {
+  list-style: none;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+}
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  
+}
+.navigation a:hover {
+  color:white;
+  background: rgb(160, 4, 192);
+  background:blueviolet;
+} 
+
+/*Desktop*/
+@media screen and (min-width:800px) {
+
+  .navigation {justify-content: space-around;} 
+}
+/*Tablet*/
+@media screen and (max-device-width: 758px) {
+  
+  header {
+  flex-direction: column;
+  justify-content:center; align-items:center; 
+  gap:25px;     
+  }
+  img[class] { 
+  width: 50%; }
+ 
+  .intro {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .flex1 {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px;
+    
+  }
+
+  .navigation {
+    flex-flow: row wrap;
+    padding:0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+  }
+  .navigation li:last-of-type a {border-bottom: none;}
+}
+
+/*Mobile Portrait*/
+@media screen and (max-device-width:320px) and (orientation:portrait) 
+{
+ 
+  h1 {font-size: large;}
+  h2 {font-size: medium;}
+  h3 {font-size: x-small;}
+  p {font-size: small; margin: 20px;}
+  img {width: 50%; height: 50%;}
+  img[class] {width: 0%;}
+
+  .navigation {
+    flex-flow: column wrap;
+    justify-content: space-around; 
+    align-items: flex-start;
+    padding:0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+  }
+  .navigation li:last-of-type a {border-bottom: none;}
+  }
+
+
+/*Mobile Landscape*/
+@media screen and (max-device-width:640px) and (orientation:landscape) { 
+  h1 {font-size: large;}
+  h2 {font-size: medium;}
+  h3 {font-size: x-small;}
+  p {font-size: small;}
+  img {width: 50%; height: 50%;}
+  img[class] {width: 25%;}
+
+  .navigation {
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    align-items: flex-start;
+    padding:0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+  }
+  .navigation li:last-of-type a {border-bottom: none;}
+  }
+
+
