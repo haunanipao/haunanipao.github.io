@@ -18,18 +18,26 @@
 }
 
 * {margin:0px; padding:0px;}
-html {display: flex; justify-content:center; align-items: center;}
+html {
+
+}
 
 body {
-  
   width: 80%;
   font-family:'Montserrat Alternates', sans-serif; font-size: 1.5rem;
   color:var(--color-text);
   padding: 20px;
   margin: 20px;
   display:flex;
-  flex-direction: column;       
-   
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 p {text-align: left; padding: 20px;}
@@ -41,7 +49,9 @@ h4 {margin-left: 20px;}
 header { 
   display:flex;
   flex-direction: row;
-  justify-content:space-between; align-items:center;      
+  justify-content:space-between; 
+  align-items:center;
+  gap: 100px;  
 }
 
 img[class] { 
@@ -53,10 +63,11 @@ main {
   height: 100%;
   font-size: 1em;
   border: var(--c6);
-
   display:flex;
-  
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  justify-content: center;
+  justify-content:space-between; 
+ 
 }
 
 nav li {
