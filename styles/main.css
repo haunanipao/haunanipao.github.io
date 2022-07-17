@@ -77,12 +77,15 @@ section {
  font-size: 1em;
  margin: var(--margin-default);
 }
-section ul li {list-style-type: circle;}
+section ul li {
+  font-size: 1em;
+  list-style-type: circle;
+}
 
 footer {
   height: 200px;
   width:100%;
-  font-size: .75 em;
+  font-size: .75em;
   display:flex;
   justify-content:center; align-items: center;
   
