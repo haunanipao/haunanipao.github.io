@@ -49,8 +49,6 @@ a:visited {color:lightcoral}
 a:hover, a:active {color:aqua;}
 h4 {margin-left: 20px;}
 
-
-
 img[class] { 
 
   display: flex; justify-content: center; align-items: center;
