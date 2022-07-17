@@ -19,6 +19,7 @@
 
 * {margin:0px; padding:0px;}
 html {
+  display: flex; justify-content: center; align-items: center;
 
 }
 
@@ -34,10 +35,12 @@ body {
   align-items: center; 
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header { 
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between; 
+  align-items:center;
+  gap: 100px;  
 }
 
 p {text-align: left; padding: 20px;}
@@ -46,13 +49,7 @@ a:visited {color:lightcoral}
 a:hover, a:active {color:aqua;}
 h4 {margin-left: 20px;}
 
-header { 
-  display:flex;
-  flex-direction: row;
-  justify-content:space-between; 
-  align-items:center;
-  gap: 100px;  
-}
+
 
 img[class] { 
 
@@ -66,27 +63,26 @@ main {
   display:flex;
   flex-flow: column wrap;
   justify-content: center;
-  
  
 }
 
-nav li {
-  
+
+nav li { 
   display:flex;
   flex-direction: column;
-  justify-content:center; align-items: center;
-        
+  justify-content:center; 
+  align-items: center;        
 }
 section {
  font-size: 1em;
  margin: var(--margin-default);
 }
-
+section ul li {list-style-type: circle;}
 
 footer {
   height: 200px;
   width:100%;
-  font-size: 1em;
+  font-size: .75 em;
   display:flex;
   justify-content:center; align-items: center;
   

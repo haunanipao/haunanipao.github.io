@@ -176,3 +176,25 @@ let greeting = ['Kia Ora', 'Aloha', 'Hallo', 'Annyeonghaseyo', 'Hi', '👋']
       }
       return console.log('Mongolian Folk Heavy Metal 🤟🏽')
   }
+
+  function testSum(){
+    var expected = 7
+    var actual = sum(5, 2)
+
+    if (actual != expected) {
+        console.log("It's broken..")
+    } else {
+        console.log("It works!")
+    }
+}
+
+let actual = 5 + 2
+let expected = 7
+
+function testSum() {
+  if (actual != expected) {
+    console.log("It's broken..")
+  } else {
+    console.log("It works!")
+  }
+}
