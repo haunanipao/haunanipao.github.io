@@ -97,8 +97,6 @@ footer {
 }
 
 
-
-aside p {font-size: smaller;}
 aside details ul{
   list-style-type: circle;
 }
@@ -109,22 +107,19 @@ aside li {
 aside h3 {
   margin:var(--margin-default);
   color: var(--c2);
-
 }
 
 aside summary {
   color: var(--c1);
   font-size: larger;
-  font-weight: bold;
-  
+  font-weight: bold;  
 }
 
 .intro {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center; align-items: flex-start;
-  width: 80%;
-  
+  width: 80%; 
 }
 
 .flex1 {
