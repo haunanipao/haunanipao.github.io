@@ -72,7 +72,7 @@ nav li {
   align-items: center;        
 }
 section {
- font-size: 1em;
+ 
  margin: var(--margin-default);
 }
 details {
@@ -83,7 +83,7 @@ details {
 }
 
 details ul li {
-  font-size: 1em;
+  
   list-style-type: circle;
 }
 
