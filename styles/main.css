@@ -70,14 +70,21 @@ main {
 nav li { 
   display:flex;
   flex-direction: column;
-  justify-content:center; 
+  justify-content: center; 
   align-items: center;        
 }
 section {
  font-size: 1em;
  margin: var(--margin-default);
 }
-section ul li {
+details {
+ 
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+details ul li {
   font-size: 1em;
   list-style-type: circle;
 }
@@ -91,12 +98,7 @@ footer {
   
 }
 
-details {
- 
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
+
 
 aside p {font-size: smaller;}
 aside details ul{
