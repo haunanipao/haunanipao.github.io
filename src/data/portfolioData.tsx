@@ -2,6 +2,7 @@
 // portfolioData.tsx
 // Content for each main section of the App page
 // ============================================
+import ImageHPao from '../assets/haunanipao.png';
 import {
   Calendar,  Github,  Linkedin,  Link2,  Menu,  X,  Code,  Users,  Lightbulb,  Palette,  Target,  Compass,  MessageCircle,  Search,  ArrowRight,  ArrowUpRight,  Sparkles,} from "lucide-react";
 
@@ -50,7 +51,7 @@ export const hero = {
 };
 
 export const heroImage = {
-  src: "/src/assets/haunanipao.png",
+  src: ImageHPao,
   alt: "A Photo, a Nano Banana and a Prompt, walk into a cafe = Minimalist black and white vector portrait of Haunani Pao.",
 };
 
