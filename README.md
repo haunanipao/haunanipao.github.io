@@ -2,7 +2,7 @@
 
 **A High-Fidelity Digital Universe** A professional single-page portfolio built with a "Vibe Coding" approach—prioritising fluid animations, accessible design, topline content set with a Deep-Space aesthetic.
 
-**Live Site:** [haunanipao.github.io](https://haunanipao.github.io/)
+**Live Site:** [haunanipao.github.io](https://haunanipao-github-io.vercel.app/)
 
 ---
 
