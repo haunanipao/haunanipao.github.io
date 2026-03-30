@@ -13,7 +13,7 @@ export const colours = {
   primary: '#DC7FE0',       // Plum Purple
   secondary: '#C5C6FF',     // Pink 
   text: '#F5CDDB',          // light Blue
-  textAlt: '#F2D3F9',     // Light Pink
+  textAlt: '#F2D3F9',       // Light Pink
   hover: '#9F5BB0',         // Magenta Purple
   cardBg: '#130E2A',        // Dark Blue Purple
   cardBorder: 'rgba(107, 177, 173, 0.15)', // light Grey
@@ -257,7 +257,7 @@ export const contact = {
   sub3: "Open to UX, Product, Vibe Coding and Web3 collaborations.",
   links: [
     {
-      label: "Book a chat",
+      label: "Let's Talk",
       href: "https://calendly.com/uxauckland/meet-with-haunani",
       icon: "Calendar",
       primary: true,

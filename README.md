@@ -31,13 +31,13 @@ The type of subscription can impact progress.  I learned the duration of free to
 
 ## 🛠 Tech Stack
 
-* **React 18.3** – Component-based architecture
-* **TypeScript** – Robust type safety
-* **Tailwind CSS v4** – Modern, utility-first styling
-* **Framer Motion** – Fluid, physics-based animations
-* **Vite** – Lightning-fast build tool
-* **Lucide React** – Clean, consistent iconography
-* **Vercel** – Automated CI/CD deployment
+* [**React 18.3**](https://react.dev/) – Component-based architecture
+* [**TypeScript**](https://www.typescriptlang.org/) – Robust type safety
+* [**Tailwind CSS v4**](https://tailwindcss.com/) – Modern, utility-first styling
+* [**Framer Motion**](https://motion.dev/) – Fluid, physics-based animations
+* [**Vite**](https://vite.dev/) – Lightning-fast build tool
+* [**Lucide React**](https://lucide.dev/icons/) – Clean, consistent iconography
+* [**Vercel**](https://vercel.com/pricing) – Automated CI/CD deployment (Continuous Integration and Delivery Deployment)
 
 ---
 
