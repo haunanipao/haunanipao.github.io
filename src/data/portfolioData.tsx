@@ -19,8 +19,8 @@ export const colours = {
   cardBorder: 'rgba(107, 177, 173, 0.15)', // light Grey
   orb1: "#7B24F6", // Large orb — top right Neon Purple
   orb2: "#E5156D", // Large orb — bottom left Neon Red
-  orb3: "#7B24F6", // Subtle mid orb — centre screen Neon Pink
-  aurora: "#012FFF", // Aurora band colour Shocking Neon Blue
+  orb3: "#FF0099", // Subtle mid orb — centre screen Neon Pink
+  aurora: "#0500FD", // Aurora band colour Shocking Neon Blue
 };
 
 export const iconMap: Record<string, React.ReactNode> = {
@@ -251,10 +251,11 @@ export const aboutNani = {
 };
 
 export const contact = {
-  heading: "Let's ",
-  sub1: "Whether you need strategic UX direction, want to talk Web3, or are looking for mentorship, I'm always open to a conversation.",
-  sub2: "Open to freelance, contract and the right opportunities in UX, product design and vibe coding.",
-  sub3: "Open to UX, Product, Vibe Coding and Web3 collaborations.",
+  sectionLabel: "Get in touch",
+  heading1: "Let's ",
+  heading2: "Talk",
+  sub2: "Open to freelance, contract in UX, Product, Coding and Web3 collaborations.",
+  sub3: "Open to UX/Product Design, Coding and Web3 opportunities.",
   links: [
     {
       label: "Let's Talk",

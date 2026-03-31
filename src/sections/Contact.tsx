@@ -4,7 +4,7 @@
 // ============================================
 import { motion } from "framer-motion";
 import { fadeUp, stagger } from '../styles/animations';
-import { colours, contact, iconMap } from '../data/portfolioData';
+import { contact, iconMap } from '../data/portfolioData';
 import { Calendar, Linkedin, Github, Link2} from "lucide-react";
 
 export const Contact = () => {
@@ -15,78 +15,45 @@ export const Contact = () => {
       >
         <div className="max-w-3xl mx-auto">
           <motion.div {...fadeUp}>
-            <p
-              className="text-s font-semibold tracking-widest uppercase mb-3"
-              style={{ color: colours.secondary }}
-            >
-              Get in Touch
-            </p>
-            <h2
-              className="text-4xl md:text-5xl font-black tracking-tight mb-4"
-              style={{ fontFamily: "'Fraunces', serif", color: colours.text }}
-            >
-              {contact.heading}
-              <em style={{ color: colours.primary }}>Talk!</em>
+            <p className="text-s font-semibold tracking-widest uppercase mb-3 text-secondary">    {contact.sectionLabel}</p>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-brand">
+              {contact.heading1}
+              <span className="font-brand-italic text-primary">{contact.heading2}</span>
             </h2>
-            <p className="text-2xl mb-12" style={{ color: colours.textAlt }}>
-              {contact.sub3}
-            </p>
+              <p className="text-2xl mb-12 text-alt">{contact.sub3}</p>
           </motion.div>
-          <motion.div
-            {...stagger}
-            className="flex flex-wrap justify-center gap-4"
+
+          <motion.div {...stagger} className="flex flex-col items-center gap-8">
+          {/* Main CTA Button */}
+          <motion.a
+            {...fadeUp}
+            href={contact.links[0].href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-3 px-25 py-5 rounded-full text-2xl font-bold transition-all duration-200 hover:scale-105 hover-primary bg-primary text-white"
           >
-            {contact.links.map((link, i) => (
-              <motion.a
-                key={i}
-                {...fadeUp}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 px-7 py-4 rounded-full font-semibold tracking-wide transition-all duration-200"
-                style={
-                  link.primary
-                    ? {
-                        background: colours.primary,
-                        color: "#fff",
-                        transform: "translateY(0)",
-                        boxShadow: "none",
-                      }
-                    : {
-                        border: `3px solid ${colours.cardBorder}`,
-                        color: colours.textAlt,
-                        transform: "translateY(0)",
-                        boxShadow: "none",
-                      }
-                }
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget as HTMLAnchorElement;
-                  el.style.transform = "translateY(0px)";
-                  if (link.primary) {
-                    el.style.background = colours.hover;
-                    el.style.boxShadow = `0 0px 0px ${colours.primary}55`;
-                  } else {
-                    el.style.borderColor = colours.primary;
-                    el.style.color = colours.primary;
-                    el.style.boxShadow = `0 8px 24px rgba(0,0,0,0.3)`;
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget as HTMLAnchorElement;
-                  el.style.transform = "translateY(0)";
-                  el.style.boxShadow = "none";
-                  if (link.primary) {
-                    el.style.background = colours.primary;
-                  } else {
-                    el.style.borderColor = colours.cardBorder;
-                    el.style.color = colours.textAlt;
-                  }
-                }}
-              >
-                {iconMap[link.icon]} {link.label}
-              </motion.a>
-            ))}
-          </motion.div>
+            <Calendar size={25} /> {contact.heading1}{contact.heading2}
+          </motion.a>
+
+            {/* THE SOCIAL ROW */}
+            <div className="flex flex-wrap justify-center gap-6">
+              {contact.links.slice(1).map((link, i) => (
+                <motion.a
+                  key={i}
+                  {...fadeUp}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-2xl font-bold transition-all duration-200 hover-primary  text-white border-4 border-card"
+                >
+                  {iconMap[link.icon]}
+                  <span className="font-ui text-base uppercase tracking-widest">
+                    {link.label}
+                  </span>
+                </motion.a>
+              ))}
+            </div>
+          </motion.div>         
         </div>
       </section>
   );

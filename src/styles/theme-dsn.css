@@ -1,0 +1,89 @@
+/* My Theme ============ */
+/* Deep Space Nani Theme */
+/* ===================== */
+
+
+:root {
+  /* brand colours */
+  --bg:#210635;            /* Dark Purple */
+  --bgAlt:#0D0A20;         /* Darker Purple */
+  --primary:#DC7FE0;       /* Plum Purple */
+  --secondary:#C5C6FF;     /* Light Blue */
+  --stars:#FFFFFF;         /* Stars */
+
+  /* Typography */
+  --text: #F5CDDB;          /* Light Blue */
+  --textAlt: #F2D3F9;       /* Light Pink */
+
+  /* Interactive */
+  --hover: #9F5BB0;         /* Soft Magenta Purple */
+
+  /* Cards */
+  --cardBg: #130E2A;        /* Dark Blue Purple */
+  --cardBorder: rgba(107, 177, 173, 0.15); /* light Grey */
+
+  /* Orbs */
+  --orb1: #7B24F6;
+  --orb2: #E5156D;
+  --orb3: #FF0099;
+  --aurora: #0500FD;
+}
+
+@layer components {
+    /* Headings / Eye-Candy */
+    .font-brand {
+    font-family: 'Fraunces', serif;
+  }
+    /* Buttons / Nav / Labels */
+    .font-ui {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+    /* Body Text / Descriptions */
+    .font-reading {
+    font-family: 'Urbanist', sans-serif;
+    line-height: 1.6;
+  }
+}
+
+/* Map to Tailwind Classes */
+@layer utilities {
+  /* Typography Styles */
+  .font-brand-italic { font-family: var(--font-brand); font-style: italic; }
+  .font-brand-bold { font-family: var(--font-brand); font-weight: 700; }
+
+  /* Text Colours */  
+  .text-primary { color: var(--primary)}
+  .text-secondary { color: var(--secondary)}
+  .text-main { color: var(--text)}
+  .text-alt { color: var(--textAlt)}
+  .text-alt-80 { color: rgba(242, 211, 249, 0.8);
+}
+  
+  /* Backgrounds */
+  .bg-main { background-color: var(--bg); }
+  .bg-soft { background-color: var(--bgAlt); }
+  .bg-primary { background-color: var(--primary); }
+  .bg-card { background-color: var(--cardBg); }
+
+  /* Borders */
+  .border-primary { border-color: var(--primary); }
+  .border-secondary { border-color: var(--secondary); }
+  .border-card { border-color: var(--cardBorder); }
+  
+  /* Custom Hover Utility */
+  .hover-social:hover {
+    color: var(--hover);
+    border-color: var(--hover);
+  }
+ 
+  /* The "Let's Talk" Button Hover */
+  .hover-primary:hover {
+    background-color: var(--hover); 
+    transform: translateY(-2px);
+  }
+  /* To support opacity, Tailwind needs the color to be mapped like this: */
+  .border-secondary\/40 { border-color: rgba(197, 198, 255, 0.4); }
+  .bg-secondary\/15 { background-color: rgba(197, 198, 255, 0.15); }  
+}
