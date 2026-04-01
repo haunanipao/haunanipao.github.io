@@ -2,7 +2,6 @@
 /* Deep Space Nani Theme */
 /* ===================== */
 
-
 :root {
   /* brand colours */
   --bg:#210635;            /* Dark Purple */
@@ -59,7 +58,7 @@
   .text-main { color: var(--text)}
   .text-alt { color: var(--textAlt)}
   .text-alt-80 { color: rgba(242, 211, 249, 0.8);
-}
+  }
   
   /* Backgrounds */
   .bg-main { background-color: var(--bg); }
@@ -78,11 +77,26 @@
     border-color: var(--hover);
   }
  
+  /* All the Hovers to catch the eye */
   /* The "Let's Talk" Button Hover */
   .hover-primary:hover {
     background-color: var(--hover); 
     transform: translateY(-2px);
   }
+
+  /* Full Stack Designer Skills */
+  .hover-card-dsn:hover {
+    border-color: var(--primary) !important;
+    transform: translateY(-6px);
+    /* Custom shadow using primary color with 30% opacity */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35), 0 0 0 1px rgba(220, 127, 224, 0.3); 
+  }
+
+  /* For the Experience Stats */
+  .hover-stat-dsn:hover {
+    background-color: rgba(220, 127, 224, 0.08) !important;
+  }
+
   /* To support opacity, Tailwind needs the color to be mapped like this: */
   .border-secondary\/40 { border-color: rgba(197, 198, 255, 0.4); }
   .bg-secondary\/15 { background-color: rgba(197, 198, 255, 0.15); }  

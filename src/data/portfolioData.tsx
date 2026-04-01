@@ -93,14 +93,15 @@ export const workItems = [
   },
 ];
 
-export const capability = [
+export const capability = 
   {
-    desc1:
-      "My career has spanned different types of focus, evolving from a designer, researcher, mentor and leading design work on web app projects. My experience strengths are product design and research. I've grown my skills in technical full-stack web development to expand my web3 knowledge.",
-    desc2:
-      "My work bridges design, research, and delivery\u2014shaped by years across product, enterprise, and government. I\u2019m now expanding into full-stack development and Web3 to deepen how I build and collaborate.",
-  },
-];
+    sectionLabel: "Capabilities",
+    heading1: "Bridging the gap ",
+    heading2: "between Design and Code",
+    desc:
+      "My work bridges design, research, and delivery\u2014shaped by years across product, enterprise, and government. I\u2019m now expanding into full-stack development, vibe coding and Web3 to deepen how I build and collaborate.",
+  };
+
 
 export const skills = {
   leadership: [
@@ -251,11 +252,11 @@ export const aboutNani = {
 };
 
 export const contact = {
-  sectionLabel: "Get in touch",
+  sectionLabel: "Get in touch", 
   heading1: "Let's ",
   heading2: "Talk",
-  sub2: "Open to freelance, contract in UX, Product, Coding and Web3 collaborations.",
-  sub3: "Open to UX/Product Design, Coding and Web3 opportunities.",
+  desc1: "Open to freelance/contract opportunities in UX/Product Design, Coding and Web3.",
+  desc2: "Open to UX/Product Design, Coding and Web3 opportunities.",
   links: [
     {
       label: "Let's Talk",

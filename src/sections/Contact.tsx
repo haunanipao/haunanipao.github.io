@@ -9,18 +9,16 @@ import { Calendar, Linkedin, Github, Link2} from "lucide-react";
 
 export const Contact = () => {
   return (
-    <section
-        id="contact"
-        className="py-24 px-6 lg:px-12 z-10 relative text-center"
-      >
+    <section id="contact"
+        className="py-24 px-6 lg:px-12 z-10 relative text-center">
         <div className="max-w-3xl mx-auto">
           <motion.div {...fadeUp}>
-            <p className="text-s font-semibold tracking-widest uppercase mb-3 text-secondary">    {contact.sectionLabel}</p>
+            <p className="text-s font-semibold tracking-widest uppercase mb-3 text-secondary">{contact.sectionLabel}</p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-brand">
               {contact.heading1}
               <span className="font-brand-italic text-primary">{contact.heading2}</span>
             </h2>
-              <p className="text-2xl mb-12 text-alt">{contact.sub3}</p>
+              <p className="text-2xl mb-12 text-alt">{contact.desc2}</p>
           </motion.div>
 
           <motion.div {...stagger} className="flex flex-col items-center gap-8">
