@@ -5,7 +5,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { fadeUp, stagger } from '../styles/animations';
-import { colours, communityIntro, uxa, adplist } from '../data/portfolioData';
+import { communityIntro, uxa, adplist } from '../data/portfolioData';
 import { ArrowUpRight} from "lucide-react";
 
 export const Community = () => {
