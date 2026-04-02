@@ -57,7 +57,7 @@ export const Hero = () => {
                 href={contact.links[0].href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-2xl font-bold tracking-wide transition-all duration-200 self-start hover-primary hover:opacity-90 hover:scale-105 bg-primary text-white">
+                className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-2xl font-bold tracking-wide transition-all duration-200 self-start hover-primary hover:opacity-90 hover:scale-105 bg-primary text-white uppercase">
                 <Calendar size={25} /> {contact.heading1}{contact.heading2}
               </motion.a>
 

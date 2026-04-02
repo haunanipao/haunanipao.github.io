@@ -28,7 +28,7 @@ export const Contact = () => {
             href={contact.links[0].href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 px-25 py-5 rounded-full text-2xl font-bold transition-all duration-200 hover:scale-105 hover-primary bg-primary text-white"
+            className="inline-flex items-center justify-center gap-3 px-25 py-5 rounded-full text-2xl font-bold transition-all duration-200 hover:scale-105 hover-primary bg-primary text-white font-reading uppercase"
           >
             <Calendar size={25} /> {contact.heading1}{contact.heading2}
           </motion.a>
@@ -42,10 +42,9 @@ export const Contact = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-2xl font-bold transition-all duration-200 hover-primary  text-white border-4 border-card"
-                >
+                  className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-2xl font-bold transition-all duration-200 text-white border-4 border-card hover-social">
                   {iconMap[link.icon]}
-                  <span className="font-ui text-base uppercase tracking-widest">
+                  <span className="font-reading text-base uppercase tracking-widest">
                     {link.label}
                   </span>
                 </motion.a>

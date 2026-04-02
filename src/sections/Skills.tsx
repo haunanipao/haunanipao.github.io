@@ -9,16 +9,15 @@ import { ArrowUpRight} from "lucide-react";
 
 export const Skills = () => {
   return (
-    <section id="skills"
-        className="py-24 px-6 lg:px-12 z-10 relative bg-soft">
+    <section id="skills" className="py-24 px-6 lg:px-12 z-10 relative bg-soft">
         <div className="max-w-7xl mx-auto">
-          <motion.div {...fadeUp} className="max-w-2xl lg:max-w-3xl">
+          <motion.div {...fadeUp} className="max-w-1xl lg:max-w-2xl">
             <p className="text-s font-semibold tracking-widest uppercase mb-3 text-secondary">{capability.sectionLabel}</p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-brand">
               {capability.heading1}<br />
-              <span className="font-brand-italic text-primary">{capability.heading2}</span>
+              <span className="font-brand-italic text-primary">{capability.heading2}<br /></span>
             </h2>
-              <p className="text-2xl mb-12 text-alt">{capability.desc}</p>
+            <p className="text-2xl mb-12 text-alt">{capability.desc}</p>
           </motion.div>
 
           {/* FULL STACK DESIGNER SKILLS */}

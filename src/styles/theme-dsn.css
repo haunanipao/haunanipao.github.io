@@ -9,6 +9,8 @@
   --primary:#DC7FE0;       /* Plum Purple */
   --secondary:#C5C6FF;     /* Light Blue */
   --stars:#FFFFFF;         /* Stars */
+  --glass12:rgba(255,255,255,.12);
+
 
   /* Typography */
   --text: #F5CDDB;          /* Light Blue */
@@ -55,16 +57,21 @@
   /* Text Colours */  
   .text-primary { color: var(--primary)}
   .text-secondary { color: var(--secondary)}
+  .text-bg { color: var(--bg)}
   .text-main { color: var(--text)}
   .text-alt { color: var(--textAlt)}
-  .text-alt-80 { color: rgba(242, 211, 249, 0.8);
-  }
+  .text-alt-80 { color: rgba(242, 211, 249, 0.8);}
+  .text-glass-60 { color: rgba (255, 255, 255, 0.6);}
+  .text-glass-80 { color: rgba (255, 255, 255, 0.8);}
+  
   
   /* Backgrounds */
   .bg-main { background-color: var(--bg); }
   .bg-soft { background-color: var(--bgAlt); }
   .bg-primary { background-color: var(--primary); }
   .bg-card { background-color: var(--cardBg); }
+  .bg-glass-12 {background-color: rgba(255,255,255,0.12); }
+  .bg-glass-22 {background-color: rgba(255,255,255,0.22); }
 
   /* Borders */
   .border-primary { border-color: var(--primary); }
@@ -73,14 +80,31 @@
   
   /* Custom Hover Utility */
   .hover-social:hover {
-    color: var(--hover);
-    border-color: var(--hover);
+    color: var(--primary);
+    border-color: var(--primary);
+    font-weight: 700;    
+
   }
  
+  .hover-community:hover {
+    background-color: rgba(255,255,255,0.22);
+    transform: translateY(-3px);
+  }
+
+  .hover-quote:hover {
+    background-color: rgba(255,255,255,0.20);
+    transform: translateY(-3px);
+  }
+
+  .hover-bg-dsn:hover {
+    background-color: var(--bg) !important;
+    color: #fff !important;
+   }
+
   /* All the Hovers to catch the eye */
   /* The "Let's Talk" Button Hover */
   .hover-primary:hover {
-    background-color: var(--hover); 
+    background-color: var(--hover);  
     transform: translateY(-2px);
   }
 

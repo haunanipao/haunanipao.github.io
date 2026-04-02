@@ -62,7 +62,14 @@ export const stats = [
   { number: "40+", label: "Clients" },
 ];
 
-export const workItems = [
+export const workIntro = {
+    sectionLabel: "Selected Work",
+    heading1: "My Adventures in ",
+    heading2: "Making and Participating",
+    desc: "These are some of the explorations I've done in Design, Coding and Web 3.",
+  };
+
+export const caseStudies = [  
   {
     tag: "Web3 · Fusion Talks · Developer Relations ",
     title: "A Designer\u2019s Journey in Art, Tech, and Web3",
@@ -87,21 +94,18 @@ export const workItems = [
   {
     tag: "Coding · Personal Growth",
     title: "WOW \u2014 Words of Wisdom",
-    desc: "A full-stack React app collecting words of wisdom from my Dev Academy Aotearoa cohort, Manaia. Built with JavaScript, React, Express, and PostgreSQL, and deployed on Vercel. It's simple, evolving, and intentionally unfinished\u2014used to explore vibe coding and grow my development practice.",
+    desc: "A full-stack React app collecting words of wisdom from my Dev Academy Aotearoa cohort in 2022, Manaia. Built with JavaScript, React, Express, and PostgreSQL, and deployed on Vercel. It's simple, evolving, and intentionally unfinished\u2014used to explore vibe coding and grow my development practice.",
     link: "https://wow-manaia.vercel.app",
     linkText: "View live",
   },
 ];
 
-export const capability = 
-  {
+export const capability = {
     sectionLabel: "Capabilities",
     heading1: "Bridging the gap ",
     heading2: "between Design and Code",
-    desc:
-      "My work bridges design, research, and delivery\u2014shaped by years across product, enterprise, and government. I\u2019m now expanding into full-stack development, vibe coding and Web3 to deepen how I build and collaborate.",
+    desc: "My work bridges design, research, and delivery\u2014shaped by years across product, enterprise, and government. I\u2019m now expanding into full-stack development, vibe coding and Web3 to deepen how I build and collaborate.",
   };
-
 
 export const skills = {
   leadership: [
@@ -162,6 +166,13 @@ export const industries = [
   "Web3",
 ];
 
+export const principleIntro = {
+    sectionLabel: "How I Work",
+    heading1: "My Design Principles & ",
+    heading2: "Collaboration Philosophy",
+    desc: "My approach to design—how I think, collaborate, and build. They reflect my values, methodologies, and priorities when it comes to designing solutions.",
+  };
+
 export const designPrinciples = [
   {
     icon: "Target",
@@ -195,27 +206,37 @@ export const designPrinciples = [
   },
 ];
 
+export const communityIntro = {
+    sectionLabel: "Community",
+    heading1: "Giving ",
+    heading2: "Back",
+    desc: "",
+  };
+
 export const uxa = {
-  heading: "User Experience Auckland",
-  desc: "Since 2013, I've been the Managing Organiser of User Experience Auckland, a volunteer-led community creating fun industry and networking events, where designers come together to learn, share what they know and grow their craft.",
+  heading1: "Managing Organiser since 2013",
+  heading2: "User Experience Auckland",
+  desc: "I'm the Managing Organiser of User Experience Auckland, a volunteer-led community creating fun industry and networking events, where designers come together to learn, share what they know and grow their craft.",
   stats: [
     { number: "3,300+", label: "Meetup Members" },
     { number: "150+", label: "Events Since 2010" },
     { number: "14yrs", label: "And Counting" },
     { number: "4.7/5", label: "614 Meetup Ratings" },
   ],
+  label: "Visit UX Auckland's Linktree",
   link: "https://linktr.ee/uxauckland",
 };
 
 export const adplist = {
-  heading: "ADPList Mentor",
+  heading1: "Mentor since 2021 · ADPList",
+  heading2: "ADPList Mentor",
   desc: "Mentoring the next generation of designers through ADPList — helping them navigate career pivots, grow their craft, and build confidence across disciplines and time zones.",
   stats: [
     { number: "50+", label: "Designers Mentored" },
     { number: "14", label: "Different Countries" },
     { number: "2100", label: "Minutes Mentored" },
   ],
-  since: "2021",
+  label: "View My ADPList Profile ",
   link: "https://adplist.org/mentors/haunani-pao",
 
   // I didn't include author's name, just where they came from.
