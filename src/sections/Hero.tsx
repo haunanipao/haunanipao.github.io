@@ -39,7 +39,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-4xl sm:text-3xl lg:text-4xl xl:text-5xl mb-6 font-brand italic text-secondary">
+              className="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl mb-6 font-brand italic text-secondary">
               {hero.tagline}
             </motion.p>
 
@@ -57,7 +57,7 @@ export const Hero = () => {
                   href={contact.links[0].href}
                   variant="primary"
                   icon="calendar"
-                  className="sm:px-105 md:py-5 md:text-xl"
+                  className="sm:px-95 md:py-5 md:text-xl"
                 />
 
               {/* Social icon buttons */}
