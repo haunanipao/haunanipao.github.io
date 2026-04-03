@@ -31,7 +31,7 @@ export const PortfolioButton = ({
     lg: 24
   };
 
-  const baseStyles = "inline-flex items-center justify-center gap-2 md:gap-3 rounded-full font-semibold tracking-wider transition-all duration-200 uppercase whitespace-nowrap";
+  const baseStyles = "inline-flex items-center justify-center gap-2 md:gap-3 rounded-full font-semibold tracking-wide transition-all duration-200 uppercase whitespace-nowrap";
   const variantStyles = {
     primary: "bg-primary text-white hover:scale-105 hover-primary shadow-lg shadow-primary/20",
     secondary: "bg-white text-bg hover:bg-dsn-hover hover:scale-105"
