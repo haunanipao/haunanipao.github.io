@@ -232,9 +232,9 @@ export const adplist = {
   heading2: "ADPList Mentor",
   desc: "Mentoring the next generation of designers through ADPList — helping them navigate career pivots, grow their craft, and build confidence across disciplines and time zones.",
   stats: [
-    { number: "50+", label: "Designers Mentored" },
-    { number: "14", label: "Different Countries" },
-    { number: "2100", label: "Minutes Mentored" },
+    { number: "50+", label: "Designers" },
+    { number: "14", label: "Countries" },
+    { number: "2100", label: "Minutes" },
   ],
   label: "View My ADPList Profile ",
   link: "https://adplist.org/mentors/haunani-pao",
