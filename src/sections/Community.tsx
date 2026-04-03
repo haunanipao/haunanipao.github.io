@@ -79,7 +79,7 @@ export const Community = () => {
                 {adplist.desc}
               </p>
               {/* ADPList Stats */}
-              <div className="grid grid-cols-3 gap-3 mb-8">
+              <div className="grid grid-cols-3 flex-col sm:flex-row gap-3 mb-8">
                 {adplist.stats.map((s, i) => (
                   <div
                     key={i}
