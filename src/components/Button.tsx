@@ -22,7 +22,7 @@ export const PortfolioButton = ({
   const sizeStyles = {
     sm: "px-4 py-2 text-[10px] sm:text-xs",          // Nav style
     md: "px-6 py-3 text-xs sm:text-sm md:text-base", // Default / Tablet
-    lg: "px-8 py-4 sm:px-10 sm:py-5 text-sm sm:text-lg md:text-xl" // Hero / Contact
+    lg: "px-6 py-3.5 text-base sm:px-10 sm:py-5 sm:text-lg" // Hero / Contact
   };
 
   const iconSizes = {

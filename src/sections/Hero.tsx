@@ -10,7 +10,7 @@ import {Calendar, Github, Linkedin, Link2, Menu, X, Sparkles,} from "lucide-reac
 
 export const Hero = () => {
   return (
-  <section id="hero" className="relative min-h-screen flex items-center pt-24 pb-20 px-6 lg:px-12 z-10">
+  <section id="hero" className="relative min-h-screen flex items-center pt-24 pb-20 px-6 lg:px-12 z-10 overflow-x-hidden">
         <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <motion.div
@@ -27,7 +27,8 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-7xl sm:text-5xl lg:text-8xl xl:text-9xl font-black leading-none tracking-tighter mb-6 font-brand text-main">
+              className="font-black leading-none tracking-tighter mb-6 font-brand text-main text-[clamp(2.5rem,8vw,8rem)]"
+            >
               {hero.heading1}
               <br />
               <span className="font-brand-italic text-primary">{hero.heading2}</span>
