@@ -5,12 +5,11 @@
 import { motion } from "framer-motion";
 import { fadeUp, stagger } from '../styles/animations';
 import { hero, heroImage, contact, iconMap } from '../data/portfolioData';
-import { PortfolioButton } from '../components/Button';
 import {Calendar, Github, Linkedin, Link2, Menu, X, Sparkles,} from "lucide-react";
 
 export const Hero = () => {
   return (
-  <section id="hero" className="relative min-h-screen flex items-center pt-24 pb-20 px-6 lg:px-12 z-10 overflow-x-hidden">
+  <section className="relative min-h-screen flex items-center pt-24 pb-20 px-6 lg:px-12 z-10">
         <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <motion.div
@@ -27,8 +26,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-black leading-none tracking-tighter mb-6 font-brand text-main text-[clamp(2.5rem,8vw,8rem)]"
-            >
+              className="text-7xl lg:text-8xl xl:text-9xl font-black leading-none tracking-tighter mb-6 font-brand text-main">
               {hero.heading1}
               <br />
               <span className="font-brand-italic text-primary">{hero.heading2}</span>
@@ -40,7 +38,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl mb-6 font-brand italic text-secondary">
+              className="text-4xl lg:text-4xl xl:text-5xl mb-6 font-brand italic text-secondary">
               {hero.tagline}
             </motion.p>
 
@@ -52,20 +50,22 @@ export const Hero = () => {
               {hero.description}
             </motion.p>
 
-            <motion.div {...stagger} className="flex flex-col max-w-sm gap-4">
-              <PortfolioButton size="lg"
-                  label={`${contact.heading1} ${contact.heading2}`} 
-                  href={contact.links[0].href}
-                  variant="primary"
-                  icon="calendar"
-                  className=" px-8 md:px-10 tracking-[0.15em]"
-                />
+            <motion.div {...stagger} className="flex flex-col gap-4">
+              {/* Primary CTA — Let's Talk */}
+              <motion.a
+                {...fadeUp}
+                href={contact.links[0].href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-2xl font-bold tracking-wide transition-all duration-200 self-start hover-primary hover:opacity-90 hover:scale-105 bg-primary text-white uppercase">
+                <Calendar size={25} /> {contact.heading1}{contact.heading2}
+              </motion.a>
 
               {/* Social icon buttons */}
               <div className="flex items-center gap-3">
                 <p
                   className="text-xs font-semibold tracking-widest uppercase mr-1 text-secondary">
-                  {hero.connect}
+                  Find me:
                 </p>
                 {contact.links.slice(1).map((link, i) => (
                   <motion.a
