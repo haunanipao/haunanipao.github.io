@@ -27,7 +27,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-7xl sm:text-6xl lg:text-8xl xl:text-9xl font-black leading-none tracking-tighter mb-6 font-brand text-main">
+              className="text-7xl sm:text-5xl lg:text-8xl xl:text-9xl font-black leading-none tracking-tighter mb-6 font-brand text-main">
               {hero.heading1}
               <br />
               <span className="font-brand-italic text-primary">{hero.heading2}</span>
@@ -57,14 +57,14 @@ export const Hero = () => {
                   href={contact.links[0].href}
                   variant="primary"
                   icon="calendar"
-                  className="md:px-10 md:py-5 md:text-xl"
+                  className="sm:px-105 md:py-5 md:text-xl"
                 />
 
               {/* Social icon buttons */}
               <div className="flex items-center gap-3">
                 <p
                   className="text-xs font-semibold tracking-widest uppercase mr-1 text-secondary">
-                  Find me:
+                  {hero.connect}
                 </p>
                 {contact.links.slice(1).map((link, i) => (
                   <motion.a

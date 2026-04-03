@@ -46,6 +46,7 @@ export const hero = {
   tagline: "Kia Ora, I\'m Haunani Pao",
   description:
     "Seasoned Product Designer blending UX and community to craft user-centric Web3 experiences. Career spans product, enterprise, SaaS consultancy, startups, and government across the US, NZ, and Australia.",
+  connect: "Find me:",
   location: "Auckland,NZ · Tāmaki Makaurau, Aotearoa",
   rights: "Right to Work in NZ & US",
 };
