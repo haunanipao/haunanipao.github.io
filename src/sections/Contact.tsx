@@ -5,6 +5,7 @@
 import { motion } from "framer-motion";
 import { fadeUp, stagger } from '../styles/animations';
 import { contact, iconMap } from '../data/portfolioData';
+import { PortfolioButton } from '../components/Button';
 import { Calendar, Linkedin, Github, Link2} from "lucide-react";
 
 export const Contact = () => {
@@ -23,14 +24,13 @@ export const Contact = () => {
 
           <motion.div {...stagger} className="flex flex-col items-center gap-8">
           {/* Main CTA Button */}
-          <motion.a
-            {...fadeUp}
-            href={contact.links[0].href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 px-25 py-5 rounded-full text-2xl font-bold transition-all duration-200 hover:scale-105 hover-primary bg-primary text-white font-reading uppercase">
-            <Calendar size={25} /> {contact.heading1}{contact.heading2}
-          </motion.a>
+            <PortfolioButton size="lg" 
+                label={`${contact.heading1} ${contact.heading2}`} 
+                href={contact.links[0].href}
+                variant="primary"
+                icon="calendar"
+                className="md:px-10 md:py-5 md:text-2xl"
+              />
 
             {/* THE SOCIAL ROW */}
             <div className="flex flex-wrap justify-center gap-6">

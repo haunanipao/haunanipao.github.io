@@ -5,6 +5,7 @@
 import { motion } from "framer-motion";
 import { fadeUp, stagger } from '../styles/animations';
 import { hero, heroImage, contact, iconMap } from '../data/portfolioData';
+import { PortfolioButton } from '../components/Button';
 import {Calendar, Github, Linkedin, Link2, Menu, X, Sparkles,} from "lucide-react";
 
 export const Hero = () => {
@@ -50,16 +51,14 @@ export const Hero = () => {
               {hero.description}
             </motion.p>
 
-            <motion.div {...stagger} className="flex flex-col gap-4">
-              {/* Primary CTA — Let's Talk */}
-              <motion.a
-                {...fadeUp}
-                href={contact.links[0].href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-2xl font-bold tracking-wide transition-all duration-200 self-start hover-primary hover:opacity-90 hover:scale-105 bg-primary text-white uppercase">
-                <Calendar size={25} /> {contact.heading1}{contact.heading2}
-              </motion.a>
+            <motion.div {...stagger} className="flex flex-col max-w-sm gap-4">
+              <PortfolioButton size="lg"
+                  label={`${contact.heading1} ${contact.heading2}`} 
+                  href={contact.links[0].href}
+                  variant="primary"
+                  icon="calendar"
+                  className="md:px-10 md:py-5 md:text-xl"
+                />
 
               {/* Social icon buttons */}
               <div className="flex items-center gap-3">

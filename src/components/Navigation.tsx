@@ -84,14 +84,14 @@ export const Navigation = () => {
                   <motion.div 
                     layoutId="activeMarker" // Framer Motion magic to slide the icon between links
                     className="text-primary mt-1">
-                    <Sparkles size={15} className="nav-icon-pulse" />
+                    <Orbit size={15} className="nav-icon-pulse" />
                   </motion.div>
                 )}
               </li>
             ))}
           </ul>
 
-          <PortfolioButton 
+          <PortfolioButton size="sm"
             label={`${contact.heading1} ${contact.heading2}`} 
             href={contact.links[0].href}
             icon="calendar"
