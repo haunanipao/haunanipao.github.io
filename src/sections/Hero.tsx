@@ -9,7 +9,7 @@ import {Calendar, Github, Linkedin, Link2, Menu, X, Sparkles,} from "lucide-reac
 
 export const Hero = () => {
   return (
-  <section className="relative min-h-screen flex items-center pt-24 pb-20 px-6 lg:px-12 z-10">
+  <section id="hero" className="relative min-h-screen flex items-center pt-24 pb-20 px-6 lg:px-12 z-10">
         <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <motion.div

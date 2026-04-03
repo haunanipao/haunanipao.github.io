@@ -28,8 +28,7 @@ export const Contact = () => {
             href={contact.links[0].href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 px-25 py-5 rounded-full text-2xl font-bold transition-all duration-200 hover:scale-105 hover-primary bg-primary text-white font-reading uppercase"
-          >
+            className="inline-flex items-center justify-center gap-3 px-25 py-5 rounded-full text-2xl font-bold transition-all duration-200 hover:scale-105 hover-primary bg-primary text-white font-reading uppercase">
             <Calendar size={25} /> {contact.heading1}{contact.heading2}
           </motion.a>
 
