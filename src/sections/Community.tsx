@@ -87,7 +87,7 @@ export const Community = () => {
                     <div className="text-2xl font-black mb-1 font-brand text-white">
                       {s.number}
                     </div>
-                    <div className="text-xs font-semibold text-center tracking-wider uppercase text-white opacity-60">
+                    <div className="text-xs font-semibold text-center tracking-wide uppercase text-white opacity-60">
                       {s.label}
                     </div>
                   </div>

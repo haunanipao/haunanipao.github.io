@@ -27,7 +27,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-7xl lg:text-8xl xl:text-9xl font-black leading-none tracking-tighter mb-6 font-brand text-main">
+              className="text-7xl sm:text-6xl lg:text-8xl xl:text-9xl font-black leading-none tracking-tighter mb-6 font-brand text-main">
               {hero.heading1}
               <br />
               <span className="font-brand-italic text-primary">{hero.heading2}</span>
@@ -39,7 +39,7 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-4xl lg:text-4xl xl:text-5xl mb-6 font-brand italic text-secondary">
+              className="text-4xl sm:text-3xl lg:text-4xl xl:text-5xl mb-6 font-brand italic text-secondary">
               {hero.tagline}
             </motion.p>
 
