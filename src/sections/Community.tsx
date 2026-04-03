@@ -83,11 +83,11 @@ export const Community = () => {
                 {adplist.stats.map((s, i) => (
                   <div
                     key={i}
-                    className="py-5 px-3 rounded-2xl text-center transition-all duration-300 cursor-default bg-glass-12 hover-community">
+                    className="py-5 px-2 rounded-2xl text-center transition-all duration-300 cursor-default bg-glass-12 hover-community">
                     <div className="text-2xl font-black mb-1 font-brand text-white">
                       {s.number}
                     </div>
-                    <div className="text-xs font-semibold tracking-wider uppercase text-white opacity-60">
+                    <div className="text-xs font-semibold text-center tracking-wider uppercase text-white opacity-60">
                       {s.label}
                     </div>
                   </div>
