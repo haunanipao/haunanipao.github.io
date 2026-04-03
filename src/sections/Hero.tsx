@@ -58,7 +58,7 @@ export const Hero = () => {
                   href={contact.links[0].href}
                   variant="primary"
                   icon="calendar"
-                  className="sm:px-95 md:py-5 md:text-xl"
+                  className="self-start px-8 md:px-10 tracking-[0.15em]"
                 />
 
               {/* Social icon buttons */}
