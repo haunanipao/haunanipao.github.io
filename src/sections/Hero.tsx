@@ -3,7 +3,7 @@
 // Hello / Aloha / Kia Ora / Hallo!
 // ============================================
 import { motion } from "framer-motion";
-import { fadeUp, stagger, staggerItem } from '../styles/animations';
+import { fadeUp, stagger } from '../styles/animations';
 import { hero, heroImage, contact, iconMap } from '../data/portfolioData';
 import {Calendar, Github, Linkedin, Link2, Menu, X, Sparkles,} from "lucide-react";
 
@@ -68,16 +68,15 @@ export const Hero = () => {
                   Find me:
                 </p>
                 {contact.links.slice(1).map((link, i) => (
-                  <motion.a
+                  <a
                     key={i}
-                    {...staggerItem}
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     title={link.label}
                     className="flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 group text-alt border-4 border-card hover-social">
                       {iconMap[link.icon]}
-                  </motion.a>
+                  </a>
                 ))}
               </motion.div>
             </motion.div>

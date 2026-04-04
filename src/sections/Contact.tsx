@@ -37,9 +37,8 @@ export const Contact = () => {
             {/* THE SOCIAL ROW */}
             <motion.div {...fadeUp} className="flex flex-wrap justify-center gap-6">
               {contact.links.slice(1).map((link, i) => (
-                <motion.a
+                <a
                   key={i}
-                  {...staggerItem}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -48,7 +47,7 @@ export const Contact = () => {
                   <span className="font-reading text-base uppercase tracking-widest">
                     {link.label}
                   </span>
-                </motion.a>
+                </a>
               ))}
             </motion.div>
           </motion.div>         
