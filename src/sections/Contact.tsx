@@ -33,7 +33,7 @@ export const Contact = () => {
               />
 
             {/* THE SOCIAL ROW */}
-            <div className="flex flex-wrap justify-center gap-6">
+            <motion.div {...fadeUp} className="flex flex-wrap justify-center gap-6">
               {contact.links.slice(1).map((link, i) => (
                 <motion.a
                   key={i}
@@ -48,7 +48,7 @@ export const Contact = () => {
                   </span>
                 </motion.a>
               ))}
-            </div>
+            </motion.div>
           </motion.div>         
         </div>
       </section>

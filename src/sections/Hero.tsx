@@ -62,7 +62,7 @@ export const Hero = () => {
               </motion.a>
 
               {/* Social icon buttons */}
-              <div className="flex items-center gap-3">
+              <motion.div {...fadeUp} className="flex items-center gap-3">
                 <p
                   className="text-xs font-semibold tracking-widest uppercase mr-1 text-secondary">
                   Find me:
@@ -79,7 +79,7 @@ export const Hero = () => {
                       {iconMap[link.icon]}
                   </motion.a>
                 ))}
-              </div>
+              </motion.div>
             </motion.div>
 
             <motion.p
