@@ -34,7 +34,7 @@ export const Navigation = () => {
           setActiveSection(entry.target.id);
         }
       });
-      
+
       // Clear selection if we are back at the very top (Hero)
       if (window.scrollY < 100) setActiveSection("");
     };
@@ -49,8 +49,10 @@ export const Navigation = () => {
       if (element) observer.observe(element);
     });
 
-    return () => window.removeEventListener("scroll", onScroll);
-    observer.disconnect();
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      observer.disconnect();
+    };
   }, []);
 
   const scrollTo = (id: string) => {

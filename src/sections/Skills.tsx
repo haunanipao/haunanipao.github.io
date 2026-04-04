@@ -3,7 +3,7 @@
 // I do this with my 🧠 🖖🏼 and 💜
 // ============================================
 import { motion } from "framer-motion";
-import { fadeUp, stagger } from '../styles/animations';
+import { fadeUp } from '../styles/animations';
 import { colours, stats, capability, skills, industries } from '../data/portfolioData';
 import { ArrowUpRight} from "lucide-react";
 
@@ -21,12 +21,11 @@ export const Skills = () => {
           </motion.div>
 
           {/* FULL STACK DESIGNER SKILLS */}
-          <motion.div {...stagger} className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 font-ui">
+          <motion.div {...fadeUp} className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 font-ui">
             {(Object.entries(skills) as [string, string[]][]).map(
               ([key, items], i) => (
-                <motion.div
+                <div
                   key={i}
-                  {...fadeUp}
                   className="p-7 rounded-2xl border transition-all duration-300  bg-card border-card hover-card-dsn">
                   <h3 className="text-lg font-bold mb-5 pb-4 border-b uppercase font-reading text-secondary border-card">
                     {key}
@@ -41,7 +40,7 @@ export const Skills = () => {
                       </li>
                     ))}
                   </ul>
-                </motion.div>
+                </div>
               ),
             )}
           </motion.div>
@@ -65,15 +64,16 @@ export const Skills = () => {
           </motion.div>
 
           {/* INDUSTRY DOMAINS */}
-          <p className="text-base font-semibold tracking-widest uppercase mb-6 text-center text-secondary">Industry Experience</p>
-          <motion.div {...stagger} className="flex flex-wrap justify-left gap-2">
+          <motion.div {...fadeUp} className="mt-16">
+            <p className="text-base font-semibold tracking-widest uppercase mb-6 text-center text-secondary">Industry Experience</p>
+            <div className="flex flex-wrap justify-left gap-2">
             {industries.map((industry, i) => (
-              <motion.span
+              <span
                 key={i}
-                {...fadeUp}
                 className="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border transition-all duration-200 cursor-default text-alt bg-card border-card hover-primary text-white">{industry}
-              </motion.span>
+              </span>
             ))}
+            </div>
           </motion.div>
         </div>
       </section>

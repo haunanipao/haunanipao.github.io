@@ -3,7 +3,7 @@
 // I believe. 
 // ============================================
 import { motion } from "framer-motion";
-import { fadeUp, stagger } from '../styles/animations';
+import { fadeUp } from '../styles/animations';
 import { principleIntro, designPrinciples, iconMap } from '../data/portfolioData';
 import { Target, Users, Search, MessageCircle, Palette, Compass } from "lucide-react";
 
@@ -22,11 +22,10 @@ export const Principles = () => {
             <p className="text-2xl mb-12 text-alt">{principleIntro.desc}</p>
           </motion.div>
 
-          <motion.div {...stagger} className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+          <motion.div {...fadeUp} className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
             {designPrinciples.map((p, i) => (
-              <motion.div
+              <div
                 key={i}
-                {...fadeUp}
                 className="p-7 rounded-2xl border transition-all duration-300 group bg-card border-card hover-card-dsn">
                 <div className="mb-4 p-2 rounded-xl inline-block transition-all duration-300 text-secondary">
                   {iconMap[p.icon]}
@@ -37,7 +36,7 @@ export const Principles = () => {
                 <p className="text-base leading-relaxed text-alt">
                   {p.desc}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         </div>

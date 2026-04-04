@@ -3,13 +3,12 @@
 // Hello / Aloha / Kia Ora / Hallo!
 // ============================================
 import { motion } from "framer-motion";
-import { fadeUp, stagger } from '../styles/animations';
 import { hero, heroImage, contact, iconMap } from '../data/portfolioData';
 import {Calendar, Github, Linkedin, Link2, Menu, X, Sparkles,} from "lucide-react";
 
 export const Hero = () => {
   return (
-  <section className="relative min-h-screen flex items-center pt-24 pb-20 px-6 lg:px-12 z-10">
+  <section id="hero" className="relative min-h-screen flex items-center pt-24 pb-20 px-6 lg:px-12 z-10">
         <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <motion.div
@@ -50,19 +49,23 @@ export const Hero = () => {
               {hero.description}
             </motion.p>
 
-            <motion.div {...stagger} className="flex flex-col gap-4">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.55, ease: [0.25, 0.1, 0.25, 1] }}
+              className="flex flex-col gap-4"
+            >
               {/* Primary CTA — Let's Talk */}
-              <motion.a
-                {...fadeUp}
+              <a
                 href={contact.links[0].href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-2xl font-bold tracking-wide transition-all duration-200 self-start hover-primary hover:opacity-90 hover:scale-105 bg-primary text-white uppercase">
                 <Calendar size={25} /> {contact.heading1}{contact.heading2}
-              </motion.a>
+              </a>
 
               {/* Social icon buttons */}
-              <motion.div {...fadeUp} className="flex items-center gap-3">
+              <div className="flex items-center gap-3">
                 <p
                   className="text-xs font-semibold tracking-widest uppercase mr-1 text-secondary">
                   Find me:
@@ -78,7 +81,7 @@ export const Hero = () => {
                       {iconMap[link.icon]}
                   </a>
                 ))}
-              </motion.div>
+              </div>
             </motion.div>
 
             <motion.p

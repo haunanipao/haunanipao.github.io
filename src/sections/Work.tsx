@@ -3,7 +3,7 @@
 // I've done this. 
 // ============================================
 import { motion } from "framer-motion";
-import { fadeUp, stagger } from '../styles/animations';
+import { fadeUp } from '../styles/animations';
 import { workIntro, caseStudies } from '../data/portfolioData';
 import { ArrowUpRight} from "lucide-react";
 
@@ -21,11 +21,10 @@ export const Work = () => {
             </h2>
           </motion.div>
           
-          <motion.div {...stagger} className="grid md:grid-cols-2 gap-4">
+          <motion.div {...fadeUp} className="grid md:grid-cols-2 gap-4">
             {caseStudies.map((item, i) => (
-              <motion.div
+              <div
                 key={i}
-                {...fadeUp}
                 className="p-8 rounded-2xl border transition-all duration-300 group bg-card border-card hover-card-dsn">
                 <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase mb-4 text-secondary">
                   {item.tag}
@@ -42,7 +41,7 @@ export const Work = () => {
                   className="inline-flex items-center gap-2 text-sm font-semibold transition-colors duration-200 text-primary">
                   {item.linkText} <ArrowUpRight size={16} />
                 </a>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         </div>
