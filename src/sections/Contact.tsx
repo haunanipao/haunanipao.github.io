@@ -3,7 +3,7 @@
 // Where's Nani?
 // ============================================
 import { motion } from "framer-motion";
-import { fadeUp, stagger } from '../styles/animations';
+import { fadeUp, stagger, staggerItem } from '../styles/animations';
 import { contact, iconMap } from '../data/portfolioData';
 import { PortfolioButton } from '../components/Button';
 import { Calendar, Linkedin, Github, Link2} from "lucide-react";
@@ -24,20 +24,22 @@ export const Contact = () => {
 
           <motion.div {...stagger} className="flex flex-col items-center gap-8">
           {/* Main CTA Button */}
-            <PortfolioButton size="lg" 
+            <motion.div {...fadeUp} className="inline-flex">
+              <PortfolioButton size="lg"
                 label={`${contact.heading1} ${contact.heading2}`} 
                 href={contact.links[0].href}
                 variant="primary"
                 icon="calendar"
                 className="md:px-10 md:py-5 md:text-2xl"
               />
+            </motion.div>
 
             {/* THE SOCIAL ROW */}
             <motion.div {...fadeUp} className="flex flex-wrap justify-center gap-6">
               {contact.links.slice(1).map((link, i) => (
                 <motion.a
                   key={i}
-                  {...fadeUp}
+                  {...staggerItem}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
