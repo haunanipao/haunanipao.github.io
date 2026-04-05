@@ -3,26 +3,34 @@
 // I believe. 
 // ============================================
 import { motion } from "framer-motion";
-import { fadeUp } from '../styles/animations';
+import { fadeUp, stagger } from '../styles/animations';
 import { principleIntro, designPrinciples, iconMap } from '../data/portfolioData';
 import { Target, Users, Search, MessageCircle, Palette, Compass } from "lucide-react";
 
 export const Principles = () => {
   return (
   <section id="principles" className="py-24 px-6 lg:px-12 z-10 relative">
-        <div className="max-w-7xl mx-auto">
-          <motion.div {...fadeUp} className="max-w-1xl lg:max-w-2xl">
+        <motion.div {...stagger} className="max-w-7xl mx-auto">
+          <motion.div {...fadeUp} className="max-w-1xl lg:max-w-2xl"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+          >
             <p className="text-s font-semibold tracking-widest uppercase mb-3 text-secondary">
               {principleIntro.sectionLabel}</p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-14 font-brand">
               {principleIntro.heading1}<br />
               <span className="font-brand-italic text-primary">
-                {principleIntro.heading2}<br /></span>  
+                {principleIntro.heading2}<br /></span>
             </h2>
             <p className="text-2xl mb-12 text-alt">{principleIntro.desc}</p>
           </motion.div>
 
-          <motion.div {...fadeUp} className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+          <motion.div {...fadeUp} className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 "
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+          >
             {designPrinciples.map((p, i) => (
               <div
                 key={i}
@@ -39,7 +47,7 @@ export const Principles = () => {
               </div>
             ))}
           </motion.div>
-        </div>
+        </motion.div>
       </section>
   );
 };

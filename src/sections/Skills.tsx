@@ -3,15 +3,19 @@
 // I do this with my 🧠 🖖🏼 and 💜
 // ============================================
 import { motion } from "framer-motion";
-import { fadeUp } from '../styles/animations';
+import { fadeUp, stagger } from '../styles/animations';
 import { colours, stats, capability, skills, industries } from '../data/portfolioData';
 import { ArrowUpRight} from "lucide-react";
 
 export const Skills = () => {
   return (
     <section id="skills" className="py-24 px-6 lg:px-12 z-10 relative bg-soft">
-        <div className="max-w-7xl mx-auto">
-          <motion.div {...fadeUp} className="max-w-1xl lg:max-w-2xl">
+        <motion.div {...stagger} className="max-w-7xl mx-auto">
+          <motion.div {...fadeUp} className="max-w-1xl lg:max-w-2xl"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+          >
             <p className="text-s font-semibold tracking-widest uppercase mb-3 text-secondary">{capability.sectionLabel}</p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-brand">
               {capability.heading1}<br />
@@ -21,7 +25,11 @@ export const Skills = () => {
           </motion.div>
 
           {/* FULL STACK DESIGNER SKILLS */}
-          <motion.div {...fadeUp} className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 font-ui">
+          <motion.div {...fadeUp} className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 font-ui"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+          >
             {(Object.entries(skills) as [string, string[]][]).map(
               ([key, items], i) => (
                 <div
@@ -45,8 +53,12 @@ export const Skills = () => {
             )}
           </motion.div>
 
-          {/* EXPERIENCE STATS :  Note for future, add percentage breakdown */}
-          <motion.div {...fadeUp} className="mt-16">
+          {/* EXPERIENCE STATS */}
+          <motion.div {...fadeUp} className="mt-16"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+          >
             <div className="border-y z-10 relative bg-soft border-card">
               <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4">
                 {stats.map((s, i) => (
@@ -64,7 +76,11 @@ export const Skills = () => {
           </motion.div>
 
           {/* INDUSTRY DOMAINS */}
-          <motion.div {...fadeUp} className="mt-16">
+          <motion.div {...fadeUp} className="mt-16"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+          >
             <p className="text-base font-semibold tracking-widest uppercase mb-6 text-center text-secondary">Industry Experience</p>
             <div className="flex flex-wrap justify-left gap-2">
             {industries.map((industry, i) => (
@@ -75,7 +91,7 @@ export const Skills = () => {
             ))}
             </div>
           </motion.div>
-        </div>
+        </motion.div>
       </section>
   );
 };

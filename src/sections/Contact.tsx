@@ -3,7 +3,7 @@
 // Where's Nani?
 // ============================================
 import { motion } from "framer-motion";
-import { fadeUp, stagger, staggerItem } from '../styles/animations';
+import { fadeUp, stagger } from '../styles/animations';
 import { contact, iconMap } from '../data/portfolioData';
 import { PortfolioButton } from '../components/Button';
 import { Calendar, Linkedin, Github, Link2} from "lucide-react";
@@ -11,9 +11,13 @@ import { Calendar, Linkedin, Github, Link2} from "lucide-react";
 export const Contact = () => {
   return (
     <section id="contact"
-        className="py-24 px-6 lg:px-12 z-10 relative text-center">
-        <div className="max-w-3xl mx-auto">
-          <motion.div {...fadeUp}>
+        className="py-24 px-6 lg:px-12 z-10 relative text-center"
+>
+        <motion.div {...stagger} className="max-w-3xl mx-auto">
+          <motion.div {...fadeUp}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}>
             <p className="text-s font-semibold tracking-widest uppercase mb-3 text-secondary">{contact.sectionLabel}</p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-4 font-brand">
               {contact.heading1}
@@ -22,20 +26,22 @@ export const Contact = () => {
               <p className="text-2xl mb-12 text-alt">{contact.desc2}</p>
           </motion.div>
 
-          <motion.div {...stagger} className="flex flex-col items-center gap-8">
+          <motion.div {...fadeUp} className="flex flex-col items-center gap-8"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+          >
           {/* Main CTA Button */}
-            <motion.div {...fadeUp} className="inline-flex">
-              <PortfolioButton size="lg"
-                label={`${contact.heading1} ${contact.heading2}`} 
+            <PortfolioButton size="lg"
+                label={`${contact.heading1} ${contact.heading2}`}
                 href={contact.links[0].href}
                 variant="primary"
                 icon="calendar"
                 className="md:px-10 md:py-5 md:text-2xl"
               />
-            </motion.div>
 
             {/* THE SOCIAL ROW */}
-            <motion.div {...fadeUp} className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               {contact.links.slice(1).map((link, i) => (
                 <a
                   key={i}
@@ -49,10 +55,9 @@ export const Contact = () => {
                   </span>
                 </a>
               ))}
-            </motion.div>
-          </motion.div>         
-        </div>
+            </div>
+          </motion.div>
+        </motion.div>
       </section>
   );
 };
-  

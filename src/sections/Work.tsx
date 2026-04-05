@@ -3,25 +3,33 @@
 // I've done this. 
 // ============================================
 import { motion } from "framer-motion";
-import { fadeUp } from '../styles/animations';
+import { fadeUp, stagger } from '../styles/animations';
 import { workIntro, caseStudies } from '../data/portfolioData';
 import { ArrowUpRight} from "lucide-react";
 
 export const Work = () => {
   return (
   <section id="work" className="py-24 px-6 lg:px-12 z-10 relative">
-        <div className="max-w-7xl mx-auto">
-          <motion.div {...fadeUp} className="max-w-1xl lg:max-w-2xl">
+        <motion.div {...stagger} className="max-w-7xl mx-auto">
+          <motion.div {...fadeUp} className="max-w-1xl lg:max-w-2xl"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+          >
             <p className="text-s font-semibold tracking-widest uppercase mb-3 text-secondary">
               {workIntro.sectionLabel}</p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-14 font-brand">
               {workIntro.heading1}<br />
               <span className="font-brand-italic text-primary">
-                {workIntro.heading2}<br /></span>             
+                {workIntro.heading2}<br /></span>
             </h2>
           </motion.div>
-          
-          <motion.div {...fadeUp} className="grid md:grid-cols-2 gap-4">
+
+          <motion.div {...fadeUp} className="grid md:grid-cols-2 gap-4"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+          >
             {caseStudies.map((item, i) => (
               <div
                 key={i}
@@ -44,7 +52,7 @@ export const Work = () => {
               </div>
             ))}
           </motion.div>
-        </div>
+        </motion.div>
       </section>
   );
 };
