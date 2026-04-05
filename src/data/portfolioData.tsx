@@ -6,8 +6,6 @@ import ImageHPao from '../assets/haunanipao.png';
 import {
   Calendar,  Github,  Linkedin,  Link2,  Menu,  X,  Code,  Users,  Lightbulb,  Palette,  Target,  Compass,  MessageCircle,  Search,  ArrowRight,  ArrowUpRight,  Sparkles,} from "lucide-react";
 
-  // Deep Space Nani
-
 export const iconMap: Record<string, React.ReactNode> = {
   Target: <Target size={32} />,
   Users: <Users size={32} />,

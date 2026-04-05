@@ -8,26 +8,19 @@
   --bgAlt:#0D0A20;         /* Darker Purple */
   --primary:#DC7FE0;       /* Plum Purple */
   --secondary:#C5C6FF;     /* Light Blue */
-  --stars:#FFFFFF;         /* Stars */
   --glass12:rgba(255,255,255,.12);
-
-
-  /* Typography */
   --text: #F5CDDB;          /* Light Blue */
   --textAlt: #F2D3F9;       /* Light Pink */
-
-  /* Interactive */
   --hover: #9F5BB0;         /* Soft Magenta Purple */
-
-  /* Cards */
   --cardBg: #130E2A;        /* Dark Blue Purple */
   --cardBorder: rgba(107, 177, 173, 0.15); /* light Grey */
-
   /* Orbs */
   --orb1: #7B24F6;
   --orb2: #E5156D;
   --orb3: #FF0099;
   --aurora: #0500FD;
+  --starFill: #FFD770;
+  --starStroke: #CC9506;
 }
 
 @layer components {
@@ -75,7 +68,7 @@
   .bg-orb1 { background-color: var(--orb1);}
   .bg-orb2 { background-color: var(--orb2);}
   .bg-orb3 { background-color: var(--orb3);}
-  .bg-aurora { background-color: var (var(--aurora));}
+  .bg-aurora { background-color: var(--aurora);}
 
   /* Borders */
   .border-primary { border-color: var(--primary); }
@@ -90,7 +83,6 @@
   backdrop-filter: none;
   border-bottom-color: transparent;
 }
-
 
  .nav-glass {
   background-color: rgba(33, 6, 53, 0.7) !important;
