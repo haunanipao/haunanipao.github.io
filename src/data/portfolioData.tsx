@@ -37,6 +37,9 @@ export const hero = {
 };
 
 export const heroImage = {
+  name1: Haunani,
+  name2: Pao,
+  nickname: Nani,
   src: ImageHPao,
   alt: "A Photo, a Nano Banana and a Prompt, walk into a cafe = Minimalist black and white vector portrait of Haunani Pao.",
 };

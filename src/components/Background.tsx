@@ -48,10 +48,10 @@ const Orb = ({ colour, size, top, bottom, left, right, animation, opacity }: Orb
 );
 
 const bgAnimation = {
-  orb1Colour: bg.orb1, // Large orb — top right
-  orb2Colour: bg.orb2, // Large orb — bottom left
-  orb3Colour: bg.orb3, // Subtle mid orb — centre left
-  auroraColour: bg.aurora, // Aurora band colour
+  orb1Colour: bg-orb1, // Large orb — top right
+  orb2Colour: bg-orb2, // Large orb — bottom left
+  orb3Colour: bg-orb3, // Subtle mid orb — centre left
+  auroraColour: bg-aurora, // Aurora band colour
   intensity: 0.25, // Overall glow strength: 0.05 = barely there · 0.25 = vivid
   orb1Speed: "22s", // Drift speed for orb 1
   orb2Speed: "28s", // Drift speed for orb 2
