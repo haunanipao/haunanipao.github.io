@@ -7,21 +7,6 @@ import {
   Calendar,  Github,  Linkedin,  Link2,  Menu,  X,  Code,  Users,  Lightbulb,  Palette,  Target,  Compass,  MessageCircle,  Search,  ArrowRight,  ArrowUpRight,  Sparkles,} from "lucide-react";
 
   // Deep Space Nani
-export const colours = {
-  bg: '#210635',            // Dark Purple
-  bgAlt: '#0D0A20',         // Darker Purple
-  primary: '#DC7FE0',       // Plum Purple
-  secondary: '#C5C6FF',     // Pink 
-  text: '#F5CDDB',          // light Blue
-  textAlt: '#F2D3F9',       // Light Pink
-  hover: '#9F5BB0',         // Magenta Purple
-  cardBg: '#130E2A',        // Dark Blue Purple
-  cardBorder: 'rgba(107, 177, 173, 0.15)', // light Grey
-  orb1: "#7B24F6", // Large orb — top right Neon Purple
-  orb2: "#E5156D", // Large orb — bottom left Neon Red
-  orb3: "#FF0099", // Subtle mid orb — centre screen Neon Pink
-  aurora: "#0500FD", // Aurora band colour Shocking Neon Blue
-};
 
 export const iconMap: Record<string, React.ReactNode> = {
   Target: <Target size={32} />,

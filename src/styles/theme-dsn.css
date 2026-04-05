@@ -68,6 +68,7 @@
   .bg-main { background-color: var(--bg); }
   .bg-soft { background-color: var(--bgAlt); }
   .bg-primary { background-color: var(--primary); }
+  .bg-secondary { background-color: var(--secondary); }
   .bg-card { background-color: var(--cardBg); }
   .bg-glass-12 { background-color: rgba(255,255,255,0.12); }
   .bg-glass-22 { background-color: rgba(255,255,255,0.22); }

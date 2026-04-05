@@ -2,7 +2,6 @@
 // Background.tsx
 // My Universe ✨
 // ============================================
-import { colours } from '../data/portfolioData';
 
 // Generate a starfield once at module load — random positions, two layers for depth
 function makeStars(count: number, maxX: number, maxY: number): string {
@@ -49,10 +48,10 @@ const Orb = ({ colour, size, top, bottom, left, right, animation, opacity }: Orb
 );
 
 const bgAnimation = {
-  orb1Colour: colours.orb1, // Large orb — top right
-  orb2Colour: colours.orb2, // Large orb — bottom left
-  orb3Colour: colours.orb3, // Subtle mid orb — centre left
-  auroraColour: colours.aurora, // Aurora band colour
+  orb1Colour: bg.orb1, // Large orb — top right
+  orb2Colour: bg.orb2, // Large orb — bottom left
+  orb3Colour: bg.orb3, // Subtle mid orb — centre left
+  auroraColour: bg.aurora, // Aurora band colour
   intensity: 0.25, // Overall glow strength: 0.05 = barely there · 0.25 = vivid
   orb1Speed: "22s", // Drift speed for orb 1
   orb2Speed: "28s", // Drift speed for orb 2
@@ -101,7 +100,7 @@ export const Background = () => {
       <div
         className="absolute inset-0"
         style={{
-          background: `linear-gradient(135deg, ${colours.bg} 0%, ${colours.bgAlt} 50%, ${colours.bg} 100%)`,
+          background: `linear-gradient(135deg, bg-main 0%, bg-soft 50%, bg-main 100%)`,
           backgroundSize: "200% 200%",
           animation: `bgBreathe ${bgAnimation.breatheSpeed} ease-in-out infinite`,
         }}
@@ -109,21 +108,21 @@ export const Background = () => {
 
       {/* Orb 1 — top right, primary */}
       <Orb 
-        colour={colours.orb1} size="620px" top="-12%" right="-6%" 
+        colour="orb1Colour" size="620px" top="-12%" right="-6%" 
         animation={`orbDrift1 ${bgAnimation.orb1Speed} ease-in-out infinite`} 
         opacity={bgAnimation.intensity} 
       />
      
       {/* Orb 2 — bottom left, secondary */}
       <Orb 
-        colour={colours.orb2} size="700px" bottom="-14%" left="-10%" 
+        colour="orb2Colour" size="700px" bottom="-14%" left="-10%" 
         animation={`orbDrift2 ${bgAnimation.orb2Speed} ease-in-out infinite`} 
         opacity={bgAnimation.intensity * 0.65} 
       />
 
       {/* Orb 3 — mid screen, subtle accent */}
       <Orb 
-        colour={colours.orb3} size="450px" top="38%" left="20%" 
+        colour="orb3Colour" size="450px" top="38%" left="20%" 
         animation={`orbDrift3 ${bgAnimation.orb3Speed} ease-in-out infinite`} 
         opacity={bgAnimation.intensity * 0.6} 
       />
@@ -131,7 +130,7 @@ export const Background = () => {
       {/* Aurora band — diagonal sweep across mid-screen */}
       <div className="absolute" style={{
         top: "30%", left: "-25%", right: "-25%", height: "350px",
-        background: `linear-gradient(180deg, transparent 0%, ${colours.aurora}22 45%, transparent 80%)`,
+        background: `linear-gradient(180deg, transparent 0%, auroraColour 22 45%, transparent 80%)`,
         transform: "rotate(-4deg)",
         animation: `auroraShift ${bgAnimation.auroraSpeed} ease-in-out infinite`,
       }} />
