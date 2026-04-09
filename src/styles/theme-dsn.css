@@ -4,17 +4,17 @@
 
 :root {
   /* brand colours */
-  --bg:#210635;            /* Dark Purple */
-  --bgAlt:#0D0A20;         /* Darker Purple */
-  --primary:#DC7FE0;       /* Plum Purple */
-  --secondary:#C5C6FF;     /* Light Blue */
-  --glass12:rgba(255,255,255,.12);
-  --text: #F5CDDB;          /* Light Blue */
-  --textAlt: #F2D3F9;       /* Light Pink */
+  --bg: #210635;            /* Dark Purple */
+  --bgAlt: #0D0A20;         /* Darker Purple */
+  --primary: #DC7FE0;       /* Plum Purple */
+  --secondary: #C5C6FF;     /* Light Blue */
   --hover: #9F5BB0;         /* Soft Magenta Purple */
+  --text: #FCF0F2;          /* Light Pink */
+  --textAlt: #F9DCE1;       /* Light Pink */
   --cardBg: #130E2A;        /* Dark Blue Purple */
   --cardBorder: rgba(107, 177, 173, 0.15); /* light Grey */
-  /* Orbs */
+  --glass12:rgba(255,255,255,.12);
+  /* Background */
   --orb1: #7B24F6;
   --orb2: #E5156D;
   --orb3: #FF0099;
