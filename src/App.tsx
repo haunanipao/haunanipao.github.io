@@ -10,6 +10,7 @@ import { Work } from './sections/Work';
 import { Principles } from './sections/DesignPrinciples';
 import { Community } from './sections/Community';
 import { Contact } from './sections/Contact';
+import { MyArt } from './sections/MyArt';
 import { Footer } from './sections/Footer';
 
 
@@ -27,7 +28,8 @@ export default function App() {
         <Work />
         <Principles />
         <Community />
-        <Contact />  
+        <Contact /> 
+        <MyArt />  
       </main>
       <Footer />
 
