@@ -56,12 +56,12 @@ export const MyArt = () => {
             </div>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex flex-wrap justify-center gap-6">
             <a
               href={instaInfo.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-10 py-4 rounded-full text-sm font-bold tracking-widest uppercase transition-all duration-200 text-white border-2 border-white/10 hover:border-primary hover:bg-primary/10 bg-white/5 backdrop-blur-sm"
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full  font-bold transition-all duration-200 text-white border-4 border-card hover-social font-reading text-base uppercase tracking-widest"
             >
               {instaInfo.label}
             </a>
