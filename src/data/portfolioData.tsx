@@ -49,7 +49,7 @@ export const myArtIntro = {
     heading2: "My Art Journey",
     desc: "There was a stretch where my “drawing” was nothing but wireframes—boxes, arrows, and flows.  In tech, there’s an assumption that if you’re a designer, you must have drawing skills, right? Well, that was not always the case. For the past few years, I practice my creativity through illustration. I’m deeply into art across styles, and I keep building my self-taught practice in both digital and traditional mediums. ",
     src: ImageMyArt,
-    alt: "Rangitoto island in Auckland, Matariki Na Hoku (Pleiades Stars) and Kāloakūlua - a waning crescent of Ka Mahina, aka The Moon, near dawn on 10 July, 2026 for one of my favourite NZ holidays - Matariki. Inspired by Vincent Van Gogh's Starry Night. Drawn in Procreate. Language Māori, Hawaiian and English used together to suit me, so apologise for the using them a little haphazardly 😉.",
+    alt: "Rangitoto island in Auckland, Matariki Na Hoku (Pleiades Stars) and Kāloakūlua - a waning crescent of Ka Mahina, aka The Moon, near dawn on 10 July, 2026 for one of my favourite NZ holidays - Matariki. Inspired by Vincent Van Gogh's Starry Night. Drawn in Procreate. Language Māori, Hawaiian and English used together to suit me, so apology for the using them a little haphazardly 😉.",
   };
 
 export const stats = [
