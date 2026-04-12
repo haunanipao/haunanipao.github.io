@@ -44,12 +44,12 @@ export const heroImage = {
 };
 
 export const myArtIntro = {
-    sectionLabel: "Practice makes Permanent",
-    heading1: "I’m on ",
-    heading2: "My Art Journey",
-    desc: "There was a stretch where my “drawing” was nothing but wireframes—boxes, arrows, and flows.  In tech, there’s an assumption that if you’re a designer, you must have drawing skills, right? Well, that was not always the case. For the past few years, I practice my creativity through illustration. I’m deeply into art across styles, and I keep building my self-taught practice in both digital and traditional mediums. ",
+    sectionLabel: "What I make",
+    heading1: "Practice ",
+    heading2: "Makes Permanent",
+    desc: "There was a stretch where my “drawing” was nothing but wireframes—boxes, arrows, and flows.  In tech, there’s an assumption that if you’re a designer, you must have drawing skills, right? Well, that was not always the case for my work. In recent years, I practice my creativity through illustration and coding. I’m explore art across styles, and I keep building my self-taught practice in both digital and traditional mediums. Making something, just for the sake of it, keeps me curious, stretches my abilities, and—honestly—keeps it fun.", 
     src: ImageMyArt,
-    alt: "Rangitoto island in Auckland, Matariki Na Hoku (Pleiades Stars) and Kāloakūlua - a waning crescent of Ka Mahina, aka The Moon, near dawn on 10 July, 2026 for one of my favourite NZ holidays - Matariki. Inspired by Vincent Van Gogh's Starry Night. Drawn in Procreate. Language Māori, Hawaiian and English used together to suit me, so apology for the using them a little haphazardly 😉.",
+    alt: "Rangitoto island in Auckland, Matariki Whetū (Pleiades Stars) and Kāloakūlua - a waning crescent of Ka Mahina, aka The Moon, near dawn on 10 July, 2026 for one of my favourite NZ holidays - Matariki. Inspired by Vincent Van Gogh's Starry Night. Drawn in Procreate. Language Māori, Hawaiian and English used together to suit me, so apology for the using them a little haphazardly 😉.",
   };
 
 export const stats = [
