@@ -27,7 +27,6 @@ export const MoonPhase = () => {
   // 1. Get the month name for your UI
   const formattedMonth = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(date);
   setMonthName(formattedMonth);
-  setYear(formattedMonth);
 
   // 2. Reference New Moon: January 6, 2000
   const referenceNewMoon = new Date(2000, 0, 6, 18, 14).getTime();
