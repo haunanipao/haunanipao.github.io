@@ -21,30 +21,28 @@ export const MoonPhase = () => {
   const [monthName, setMonthName] = useState<string>(""); // State for the month
 
   useEffect(() => {
-    const calculateMoonPhase = () => {
-  const date = new Date();
-  
-  // 1. Get the month name for your UI
-  const formattedMonth = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(date);
-  setMonthName(formattedMonth);
+  const calculateMoonPhase = () => {
+    const date = new Date();
 
-  // 2. Reference New Moon: January 6, 2000
-  const referenceNewMoon = new Date(2000, 0, 6, 18, 14).getTime();
-  const now = date.getTime();
-  
-  // 3. Length of a lunar cycle in milliseconds
-  const lunarCycle = 29.530588 * 24 * 60 * 60 * 1000;
-  
-  // 4. Calculate how many cycles have passed
-  const elapsed = now - referenceNewMoon;
-  const cyclesPassed = elapsed / lunarCycle;
-  const currentCycleFraction = cyclesPassed % 1; // Just the decimal (0.0 to 0.99)
+    // 1. Get the month name for your UI
+    const formattedMonth = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(date);
+    setMonthName(formattedMonth);
 
-  // 5. Map 0-1 to our 8 phases
-  // We use Math.floor because 0.0-0.124 is New Moon, etc.
-  const phaseIndex = Math.floor(currentCycleFraction * 8);
-  
-  setCurrentPhase(phases[phaseIndex]);
+    // 2. Reference New Moon: January 6, 2000
+    const referenceNewMoon = new Date(2000, 0, 6, 18, 14).getTime();
+    const now = date.getTime();
+    
+    // 3. Length of a lunar cycle in milliseconds
+    const lunarCycle = 29.530588 * 24 * 60 * 60 * 1000;
+    
+    // 4. Calculate how many cycles have passed
+    const elapsed = now - referenceNewMoon;
+    const cyclesPassed = elapsed / lunarCycle;
+    const currentCycleFraction = cyclesPassed % 1; // Just the decimal (0.0 to 0.99)
+
+    // 5. Map 0-1 to our 8 phases and set the current Moon Phase
+    const phaseIndex = Math.floor(currentCycleFraction * 8);    
+    setCurrentPhase(phases[phaseIndex]);
 };
     const timer = setTimeout(calculateMoonPhase, 500);
     return () => clearTimeout(timer);
