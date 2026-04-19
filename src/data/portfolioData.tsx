@@ -89,10 +89,10 @@ export const caseStudies = [
     linkText: "View project",
   },
   {
-    tag: "Coding · Personal Growth",
-    title: "WOW \u2014 Words of Wisdom",
-    desc: "A full-stack React app collecting words of wisdom from my Dev Academy Aotearoa cohort in 2022, Manaia. Built with JavaScript, React, Express, and PostgreSQL, and deployed on Vercel. It's simple, evolving, and intentionally unfinished\u2014used to explore vibe coding and grow my development practice.",
-    link: "https://wow-manaia.vercel.app",
+    tag: "Cultural Tech · React · API",
+    title: "Kaulana Mahina | Hawaiian Lunar Calendar",
+    desc: "A real-time Hawaiian lunar cycle tracking app that calculates moon phases and traditional moonset gates to reflect how pre-contact Hawaiian kept track of time and seasons. Built to reconnect with ancestral knowledge through modern tech, this React app uses live astronomical data. It's a living project focused on clean modular architecture and indigenous observation.",
+    link: "https://kaulana-mahina.vercel.app",
     linkText: "View live",
   },
 ];
