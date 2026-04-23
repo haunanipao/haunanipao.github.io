@@ -67,6 +67,13 @@ export const workIntro = {
   };
 
 export const caseStudies = [  
+    {
+    tag: "Cultural Tech · React · Work in Progress",
+    title: "Kaulana Mahina | Hawaiian Lunar Calendar",
+    desc: "A real-time Hawaiian lunar cycle tracking app that calculates nightly moon phases, grounded in how pre-contact Hawaiians understood time through the natural world. This project is my way of reconnecting with ancestral knowledge through code—using live astronomical data in a modular React system that evolves as I do.",
+    link: "https://kaulana-mahina.vercel.app",
+    linkText: "View live",
+  },
   {
     tag: "Web3 · Fusion Talks · Developer Relations ",
     title: "A Designer\u2019s Journey in Art, Tech, and Web3",
@@ -88,13 +95,7 @@ export const caseStudies = [
     link: "https://devpost.com/software/happy-honu",
     linkText: "View project",
   },
-  {
-    tag: "Cultural Tech · React · Work in Progress",
-    title: "Kaulana Mahina | Hawaiian Lunar Calendar",
-    desc: "A real-time Hawaiian lunar cycle tracking app that calculates nightly moon phases, grounded in how pre-contact Hawaiians understood time through the natural world. This project is my way of reconnecting with ancestral knowledge through code—using live astronomical data in a modular React system that evolves as I do.",
-    link: "https://kaulana-mahina.vercel.app",
-    linkText: "View live",
-  },
+
 ];
 
 export const capability = {
