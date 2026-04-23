@@ -91,7 +91,7 @@ export const caseStudies = [
   {
     tag: "Cultural Tech · React · Work in Progress",
     title: "Kaulana Mahina | Hawaiian Lunar Calendar",
-    desc: "A real-time Hawaiian lunar cycle tracking app that calculates nightly moon phases to show how pre-contact Hawaiians kept track of time in the natural world. Built to reconnect with ancestral knowledge through modern tech, this React app uses live astronomical data. It's a living project focused on modular architecture and continuous learning.",
+    desc: "A real-time Hawaiian lunar cycle tracking app that calculates nightly moon phases, grounded in how pre-contact Hawaiians understood time through the natural world. This project is my way of reconnecting with ancestral knowledge through code—using live astronomical data in a modular React system that evolves as I do.",
     link: "https://kaulana-mahina.vercel.app",
     linkText: "View live",
   },
