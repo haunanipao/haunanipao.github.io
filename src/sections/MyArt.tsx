@@ -5,7 +5,7 @@
 import { motion } from "framer-motion";
 import { fadeUp, stagger } from '../styles/animations';
 import { myArtIntro } from '../data/portfolioData';
-import { MoonPhase } from '../components/MoonPhase';
+// import { MoonPhase } from '../components/MoonPhase';
 
 const instaInfo = {
   label: "My Instagram",
@@ -31,14 +31,14 @@ export const MyArt = () => {
         </motion.div>
 
         {/* Mahina in Space */}
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="hidden lg:flex items-center justify-center mb-3"
           className="max-w-xs">
           <MoonPhase />
-        </motion.div>
+        </motion.div> */}
 
         <motion.div {...fadeUp} className="flex flex-col items-center gap-12"
           initial={{ opacity: 0, y: 40 }}
