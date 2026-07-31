@@ -49,7 +49,7 @@ export const MyArt = () => {
             <img 
               src={myArtIntro.src} 
               alt={myArtIntro.alt}
-              className="w-full h-auto object-cover"
+              className="w-auto h-auto object-cover"
             />
             <div className="p-6 bg-card border-t border-white/5">
               <p className="text-base leading-relaxed text-alt italic">{myArtIntro.alt}</p>

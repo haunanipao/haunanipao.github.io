@@ -50,7 +50,7 @@ export const myArtIntro = {
     desc: "There was a stretch where my “drawing” was nothing but wireframes—boxes, arrows, and flows.  In tech, there’s an assumption that if you’re a designer, you must have drawing skills, right? Well, that was not always the case for my work. In recent years, I practice my creativity through illustration and coding. I explore art across styles, and I keep building my self-taught practice in both digital and traditional mediums. Making something, just for the sake of it, keeps me curious, stretches my abilities, and—honestly—keeps it fun.", 
     src: ImageMyArt,
     altold: "Rangitoto island in Auckland, Matariki Whetū (Pleiades Stars) and Kāne - the 27th day on the Hawaiian Lunar Calendar. This is the rising of a waning crescent of Ka Mahina (The Moon), near dawn on 10 July, 2026 and marks one of my favourite NZ holidays - Matariki. Inspired by Vincent Van Gogh's Starry Night. Drawn in Procreate. Language Māori, Hawaiian and English used together to suit me, so apology for the using them a little haphazardly 😉.",
-    alt: "I had a little time to draw an abstract sunset on the beach. Created with acrylic posca and molotow markers in my Leuchtterm 1917 notebook. going analog ftw.",
+    alt: "I had a little time to draw an abstract sunset on the beach. Created with acrylic posca and molotow markers in my Leuchtterm 1917 notebook. Analog ftw.",
   };
 
 export const stats = [
