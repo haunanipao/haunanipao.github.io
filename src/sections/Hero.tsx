@@ -4,7 +4,7 @@
 // ============================================
 import { motion } from "framer-motion";
 import { hero, heroImage, contact, iconMap } from '../data/portfolioData';
-import {Calendar, Github, Linkedin, Link2, Menu, X, Sparkles,} from "lucide-react";
+import {Calendar, Sparkles,} from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -17,7 +17,7 @@ export const Hero = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
             >
               <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border text-base font-semibold tracking-widest uppercase mb-8 border-secondary/40 bg-secondary/15 text-secondary">
-                <Sparkles size={14} />{hero.badge}
+                <Sparkles size={14} aria-hidden="true" />{hero.badge}
               </div>
             </motion.div>
 
@@ -61,7 +61,7 @@ export const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-full text-2xl font-bold tracking-wide transition-all duration-200 self-start hover-primary hover:opacity-90 hover:scale-105 bg-primary text-white uppercase">
-                <Calendar size={25} /> {contact.heading1}{contact.heading2}
+                <Calendar size={25} aria-hidden="true" /> {contact.heading1}{contact.heading2}
               </a>
 
               {/* Social icon buttons */}
@@ -76,9 +76,9 @@ export const Hero = () => {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    title={link.label}
+                    aria-label={link.label}
                     className="flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 group text-alt border-4 border-card hover-social">
-                      {iconMap[link.icon]}
+                      <span aria-hidden="true">{iconMap[link.icon]}</span>
                   </a>
                 ))}
               </div>
@@ -109,4 +109,3 @@ export const Hero = () => {
       </section>
   );
 };
-  

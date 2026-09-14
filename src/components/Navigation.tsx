@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Calendar, Orbit, MoonStar, Telescope, Sparkles, ZodiacCapricorn,} from "lucide-react";
+import { Menu, X, Orbit } from "lucide-react";
 import { Logo } from '../components/Logo';
 import { PortfolioButton } from '../components/Button';
 import { contact } from '../data/portfolioData';
@@ -86,7 +86,7 @@ export const Navigation = () => {
                   <motion.div 
                     layoutId="activeMarker" // Framer Motion magic to slide the icon between links
                     className="text-primary mt-1">
-                    <Orbit size={15} className="nav-icon-pulse" />
+                    <Orbit size={15} className="nav-icon-pulse" aria-hidden="true" />
                   </motion.div>
                 )}
               </li>
@@ -100,9 +100,11 @@ export const Navigation = () => {
           />
 
           <button
-            className="md:hidden text-white"
-            onClick={() => setMobileOpen(!mobileOpen)}>
-            {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+            className="md:hidden text-white p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={mobileOpen}>
+            {mobileOpen ? <X size={28} aria-hidden="true" /> : <Menu size={28} aria-hidden="true" />}
           </button>
         </div>
 
